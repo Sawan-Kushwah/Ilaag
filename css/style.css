@@ -7,6 +7,10 @@ body {
 }
 
 /* Navbar designing  */
+.heroSection {
+    height: 100vh;
+}
+
 .navbar {
     justify-content: space-around;
     position: sticky;
@@ -121,10 +125,7 @@ ul li a {
 .doctorSearchBar {
     display: flex;
     flex-direction: row;
-    border-width: 2px 0px 2px 2px;
-    border-style: solid none solid solid;
-    border-color: rgb(51, 51, 51);
-    border-radius: 5px 0px 0px 5px;
+    border: 2px solid #9ecec7;
     width: 100%;
 }
 
@@ -141,6 +142,7 @@ ul li a {
     font-size: 18px;
     font-weight: 600;
     padding: 10px;
+    border: none;
 }
 
 .nearMe {
@@ -169,7 +171,7 @@ ul li a {
 }
 
 /* .searchButton styling */
-button {
+.searchButton button {
     border-radius: 4px;
     background: #1ab64f;
     border: none;
@@ -180,18 +182,16 @@ button {
     width: 100%;
     transition: all 0.5s;
     cursor: pointer;
-    height: 100%;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
 }
 
-button {
+.searchButton button {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-button:after {
+.searchButton button:after {
     content: '🔎︎';
     position: absolute;
     opacity: 0;
@@ -200,17 +200,95 @@ button:after {
     transition: 0.5s;
 }
 
-button:hover {
+.searchButton button:hover {
     padding-right: 24px;
     padding-left: 8px;
 }
 
-button:hover:after {
+.searchButton button:hover:after {
     opacity: 1;
     right: 10px;
+}
+
+/* Department styling  goes here */
+.department {
+    text-align: center;
+    padding: 90px 0px;
+}
+
+.departHead {
+    text-align: center;
+}
+
+.departHeading {
+    font-size: 2.3rem;
+    margin: 0;
+    font-family: Kanit;
+}
+
+.departRow {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.box {
+    width: 21%;
+    height: 270px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.departRow .box .imgBox {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+    background-color: #62d2a2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details h3 {
+    margin: 0;
+    font-family: Kanit;
+}
+
+.details p {
+    padding: 5px;
+    margin-top: 0;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #62d2a2;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #62d2a2;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn:hover {
+    color: #62d2a2;
+    background-color: white;
 }
 
 /* utility classes */
 .flex {
     display: flex;
+}
+
+p {
+    font-family: 'Poppins';
+
 }
