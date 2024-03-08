@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar designing  */
+.navbar {
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: Open Sans;
+}
+
+.navbar * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.logo img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo div {
+    margin: 0px 10px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: .5em .8em;
+    color: rgba(0, 0, 0, 0.88);
+    position: relative;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+
+.navbar a::before,
+.navbar a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.navbar a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+
+.navbar a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.navbar a:hover {
+    color: #3DA35D;
+}
+
+
+
+
+.heroBox img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.mainBox {
+    padding: 155px;
+}
+
+.heroText {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: white;
+    font-family: Kanit;
+    margin-bottom: 15px;
+}
+
+/* Styling search bar  */
+.doctorSearchBar {
+    display: flex;
+    flex-direction: row;
+    border-width: 2px 0px 2px 2px;
+    border-style: solid none solid solid;
+    border-color: rgb(51, 51, 51);
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+}
+
+.inputCondition,
+.inputLocation {
+    width: 45%;
+    display: flex;
+    padding: 0px;
+}
+
+.doctorSearchBar input[type="text"] {
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.nearMe {
+    justify-content: center;
+    font-size: 18px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    min-width: 100px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nearMe:hover {
+    background: #d0d0d0;
+}
+
+.icon {
+    margin: 6px;
+}
+
+.searchButton {
+    width: 12%;
+}
+
+/* .searchButton styling */
+button {
+    border-radius: 4px;
+    background: #1ab64f;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 0;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button:after {
+    content: '🔎︎';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
