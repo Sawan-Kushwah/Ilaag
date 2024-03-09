@@ -25,7 +25,7 @@ body {
 }
 
 .logo img {
-    width: 65px;
+    width: 72px;
     border-radius: 50%;
 }
 
@@ -34,10 +34,18 @@ body {
     align-items: center;
 }
 
-.logo div {
+.webNameBar {
+    cursor: pointer;
+}
+
+.webNameBar:hover {
+    font-size: 1.1rem;
+}
+
+.logo .webName {
     margin: 0px 10px;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -58,7 +66,6 @@ ul li a {
     position: relative;
     text-decoration: none;
     font-size: 22px;
-
 }
 
 .navbar a::before,
@@ -129,6 +136,11 @@ ul li a {
     width: 100%;
 }
 
+.doctorSearchBar form {
+    width: 100%;
+    display: flex;
+}
+
 .inputCondition,
 .inputLocation {
     width: 45%;
@@ -145,21 +157,15 @@ ul li a {
     border: none;
 }
 
+/* Near me styling here */
 .nearMe {
     justify-content: center;
-    font-size: 18px;
-    background: #f2f2f2;
+    background: transparent;
     display: flex;
     align-items: center;
     width: fit-content;
-    min-width: 100px;
-    padding: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.nearMe:hover {
-    background: #d0d0d0;
 }
 
 .icon {
@@ -281,6 +287,132 @@ ul li a {
 .btn:hover {
     color: #62d2a2;
     background-color: white;
+}
+
+/* Department Styling ends here */
+
+/* About us Styling goes here */
+.aboutUs {
+    padding: 60px;
+}
+
+.aboutUs h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: Kanit;
+    margin: 0px;
+}
+
+.aboutUsRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsRow .leftBox {
+    width: 38%;
+}
+
+.aboutUsRow .leftBox img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.aboutUsRow .rightBox {
+    width: 55%;
+}
+
+/* foorter section styling goes here */
+.footer {
+    background: #178066;
+    color: #ffffff;
+}
+
+.footerRow {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.footerRow h3 {
+    font-family: Open Sans;
+    font-size: 1.6rem;
+}
+
+.footerReachAt .contact-text a {
+    color: #fff;
+    transition-duration: 0.2s;
+    font-size: 1rem;
+}
+
+.footerReachAt .list-item {
+    line-height: 0;
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerSocial i {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.footerSocial i:hover {
+    color: aqua;
+    font-size: 1.7rem;
+}
+
+.footerRow #quickLinks li {
+    list-style: none;
+    margin: 9px 0px;
+}
+
+.footerRow #quickLinks li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footerRow #quickLinks li a:hover {
+    color: rgb(198, 193, 193);
+    font-size: 1.1rem;
+}
+
+#footerEmail {
+    width: 67%;
+    margin: 35px 0px 19px 0px;
+    background: white;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#footerBtn {
+    margin-top: 10px;
+    width: 205px;
+    background: #07c886;
+    border: 2px solid #06ba7d;
+}
+
+#footerBtn:hover {
+    background: white;
+}
+
+.footer .rights {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+ 
+
+.rights :nth-last-child(1) {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.8rem;
 }
 
 /* utility classes */
