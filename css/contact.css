@@ -1,13 +1,15 @@
 .bgForAboutContact {
     width: 100%;
-    height:  auto;
+    height: auto;
     background: url('../img/contact.png') no-repeat center center/cover;
 }
-.department{
+
+.department {
     width: 100%;
-    height:  auto;
+    height: auto;
     background: url('../img/hj.png') no-repeat center center/cover;
 }
+
 .section-header {
     text-align: center;
     margin: 0 auto;
@@ -89,7 +91,7 @@ textarea {
     letter-spacing: 2px;
 }
 
- 
+
 
 /* Begin Right Contact Page */
 .direct-contact-container {
@@ -213,7 +215,6 @@ hr {
 
     .direct-contact-container {
         margin-top: 60px;
-        max-width: 300px;
     }
 
     .social-media-list li {
@@ -252,7 +253,6 @@ hr {
 
     .direct-contact-container {
         margin-top: 60px;
-        max-width: 280px;
     }
 
     .social-media-list {

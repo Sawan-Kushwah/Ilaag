@@ -5,8 +5,20 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* Navbar designing  */
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    display: none;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
 .heroSection {
     height: 100vh;
 }
@@ -17,6 +29,7 @@ body {
     top: 0;
     left: 0;
     font-family: Open Sans;
+    transition: all 0.3s ease;
 }
 
 .navbar * {
@@ -32,6 +45,9 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    position: sticky;
+    margin: 0px 40px;
+    transition: all 0.3s ease;
 }
 
 .webNameBar {
@@ -103,7 +119,7 @@ ul li a {
 }
 
 .navbar a:hover {
-    color: #3DA35D;
+    color: #07f853;
 }
 
 
@@ -329,11 +345,12 @@ ul li a {
 }
 
 .footerRow {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0px auto;
+    margin: 0px;
+    padding: 30px;
 }
 
 .footerRow h3 {
@@ -393,7 +410,7 @@ ul li a {
 
 #footerBtn {
     margin-top: 10px;
-    width: 205px;
+    width: 77%;
     background: #07c886;
     border: 2px solid #06ba7d;
 }
@@ -415,6 +432,12 @@ ul li a {
     font-size: 0.8rem;
 }
 
+.footerBoxLine {
+    display: none;
+}
+.departLine{
+    display: none;
+}
 /* utility classes */
 .flex {
     display: flex;
@@ -422,5 +445,4 @@ ul li a {
 
 p {
     font-family: 'Poppins';
-
 }

@@ -7,6 +7,7 @@
     <title>CareConnect</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
 
@@ -15,22 +16,26 @@
         <div class="heroBox">
             <img src="img/hero-bg.png" alt="hero-bg">
         </div>
-        <nav class="flex navbar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <div class="webNameBar">
-                    <div class="webName">Ilaag</div>
-                    <div class="nearMe">
-                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </span> Near Me
-                    </div>
+        <div class="hamburger">
+            <i id="ham" class="fa-solid fa-bars fa-3x"></i>
+            <i id="cross" class="fa-solid fa-x fa-3x"></i>
+        </div>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+            <div class="webNameBar">
+                <div class="webName">Ilaag</div>
+                <div class="nearMe">
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span> Near Me
                 </div>
             </div>
+        </div>
+        <nav class="flex navbar ">
             <ul class="flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">LogIn</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#abou">About</a></li>
+                <li><a href="#depart">Departments</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">SignUp</a></li>
             </ul>
         </nav>
@@ -62,12 +67,13 @@
     </div>
 
     <!-- Departments section start here -->
-    <section class="department">
+    <section id="depart" class="department">
         <div class="departHead">
             <h1 class="departHeading">OUR DEPARTMENTS</h1>
             <p class="departPara">Our department pioneers seamless healthcare access through intuitive technology and
                 strategic partnerships</p>
         </div>
+        <hr class="departLine">
         <div class="departRow">
             <div class="box">
                 <div class="imgBox"><i class="fa-solid fa-heart-pulse fa-3x"></i></div>
@@ -76,30 +82,31 @@
                     <p>Heart disease diagnosis, treatment, prevention, cardiovascular health promotion.</p>
                 </div>
             </div>
+            <hr class="departLine">
             <div class="box">
                 <div class="imgBox"><i class="fa-solid fa-tooth fa-3x"></i></div>
                 <div class="details">
                     <h3>Dentist</h3>
-                    <p>Involves oral health, treating teeth, gums, mouth-related issues, and promoting preventive care
-                        practices</p>
+                    <p>Involves oral health, mouth-related issues, and promoting preventive care practices</p>
                 </div>
             </div>
+            <hr class="departLine">
             <div class="box">
                 <div class="imgBox"><i class="fa-solid fa-x-ray fa-3x"></i></div>
                 <div class="details">
                     <h3>Sonography</h3>
-                    <p> It is a medical imaging technique that uses high-frequency sound waves to create images of
-                        internal body structures.</p>
+                    <p> It uses high-frequency sound waves to create images of internal body structures.</p>
                 </div>
             </div>
+            <hr class="departLine">
             <div class="box">
                 <div class="imgBox"><i class="fa-solid fa-notes-medical fa-3x"></i></div>
                 <div class="details">
                     <h3>Diagnosis</h3>
-                    <p>Identifying health issues through signs, symptoms, and medical tests for accurate treatment
-                        planning and management.</p>
+                    <p>Identifying health issues through signs, symptoms,medical tests for accurate treatment</p>
                 </div>
             </div>
+            <hr class="departLine">
         </div>
         <div class="departBtn">
             <button class="btn">View All Departments</button>
@@ -109,7 +116,8 @@
     <hr>
     <!-- About us section start here -->
     <section class="bgForAboutContact">
-        <section class="aboutUs">
+        <section class="aboutUs" id="abou">
+            <h2>ABOUT US</h2>
             <div class="aboutUsRow">
                 <div class="leftBox">
                     <div class="img">
@@ -117,7 +125,6 @@
                     </div>
                 </div>
                 <div class="rightBox">
-                    <h2>ABOUT US</h2>
                     <p>we're proud to introduce our platform as a pioneering solution in healthcare accessibility.
                         Committed
                         to simplifying the patient journey, we leverage cutting-edge technology and strategic
@@ -227,13 +234,15 @@
                     </div>
                 </div>
             </div>
+            <hr class="footerBoxLine">
             <div class="box">
                 <div class="details">
                     <h3 style="padding: 0px 6px;">About</h3>
                     <p> we're proud to introduce our platform as a pioneering solution in healthcare accessibility.
-                        Committed to simplifying the patient journey, we leverage technology.</p>
+                        Committed to simplifying the patient journey.</p>
                 </div>
             </div>
+            <hr class="footerBoxLine">
             <div class="box">
                 <div class="details" id="quickLinks">
                     <h3>Links</h3>
@@ -244,16 +253,18 @@
                     <li><a href="#">SignUp</a></li>
                 </div>
             </div>
+            <hr class="footerBoxLine">
             <div class="box">
                 <div class="details">
                     <h3>Newsletter</h3>
-                    <div class=" form-group ">
+                    <div class=" form-group " style="text-align: center;">
                         <input type="text" id="footerEmail" class="form-control" id="email" placeholder="Enter Email"
                             value="" required>
+                        <button class="btn send-button" id="footerBtn" type="submit" value="SEND">SUSCRIBE</button>
                     </div>
-                    <button class="btn send-button" id="footerBtn" type="submit" value="SEND">SUSCRIBE</button>
                 </div>
             </div>
+            <hr class="footerBoxLine">
         </div>
         <div class="rights">
             <p style="margin: 0px;">© 2024 All Rights Reserved </p>
@@ -264,6 +275,7 @@
         </div>
     </footer>
     <script src="javascript/script.js"></script>
+    <script src="javascript/responsive.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
 </body>
 
