@@ -97,7 +97,8 @@
         line-height: 2;
 
     }
-    .hamburger #cross{
+
+    .hamburger #cross {
         color: white
     }
 }
@@ -142,6 +143,10 @@
         margin: 4px 0px;
     }
 
+    .contact-wrapper {
+        max-width: none;
+    }
+
 }
 
 @media only screen and (max-width: 770px) {
@@ -152,7 +157,7 @@
     }
 
     .heroBox img {
-        width: 100%;
+        width: 770px;
         height: 90%;
     }
 }
@@ -171,7 +176,7 @@
     }
 
     .heroBox img {
-        width: 100%;
+        width: 570px;
         height: 80%;
     }
 
@@ -192,16 +197,16 @@
 
     .form-control,
     textarea {
-        max-width: 260px;
+        max-width: 74%;
     }
 
     .send-button {
         margin-top: 15px;
-        width: 297px;
+        width: 73%;
     }
 
     .mainBox {
-        padding: 130px 6px 70px 6px;
+        padding: 130px 6px 70px 25px;
     }
 
     .aboutUsRow .rightBox {
@@ -248,7 +253,7 @@
     }
 
     .heroBox img {
-        width: 100%;
+        width: 400px;
         height: 70%;
     }
 
@@ -258,5 +263,47 @@
 
     .section-header {
         font-size: 3rem;
+    }
+
+    .contact-wrapper {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .heroBox img {
+        width: 360px;
+    }
+
+    .section-header {
+        font-size: 2.1rem;
+        padding: 0px;
+    }
+
+    .departHead {
+        padding: 0px 20px;
+    }
+
+    .heroText {
+        line-height: 1.4rem;
+    }
+
+    .mainBox {
+        padding: 20px 6px 0px 25px !important;
+    }
+
+    .department {
+        padding: 0px 5px;
+    }
+
+    .direct-contact-container {
+        margin-top: 0px;
+    }
+
+    .footerBoxLine {
+        width: 230px;
+    }
+    .footer .rights {
+        font-size: 1rem;
     }
 }

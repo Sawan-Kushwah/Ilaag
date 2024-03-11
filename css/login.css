@@ -128,7 +128,7 @@
     justify-content: space-between;
     margin: 15px auto;
     font-weight: 400;
-    color: #898484;
+    color: #000000;
 }
 
 .remember-forget a {
@@ -161,25 +161,6 @@
 .regester-login a:hover {
     text-decoration: underline;
 }
-
-/* .wraper-register {
-    background-color: white;
-    position: absolute;
-    height: 440px;
-    width: 400px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    backdrop-filter: blur(20px);
-    background: transparent;
-    box-shadow: 0 0 30 rgb(0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 150px;
-    right: 37%;
-    transform: scale(0);
-    transition: transform 0.3s ease-in;
-} */
 
 .active-pop {
     transform: scale(1);

@@ -14,13 +14,13 @@ html {
     height: 100vh;
     background:  url('https://cdn.svgator.com/images/2023/06/hearthbeat-svg-loader-animation.svg') no-repeat center;
     z-index: 100;
-    background-size: 24rem;
+    /* background-size: 24rem; */
     transition: all 0.5s ease-out;
     font-size: 5rem;
     text-align: center;
     align-items: center;
     display: grid;
-    background-size: 300%;
+    background-size: 400%;
      /* z-index: 1000; */
 }
 
