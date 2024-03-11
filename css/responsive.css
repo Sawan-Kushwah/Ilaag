@@ -1,6 +1,6 @@
 .resNav {
     display: flex !important;
-    height: 100vh !important;
+    height: 70vh !important;
 }
 
 .blackBg {
@@ -101,6 +101,14 @@
     .hamburger #cross {
         color: white
     }
+
+    .heroBox img {
+        height: 64%;
+    }
+
+    .heroSection {
+        height: 65vh;
+    }
 }
 
 @media only screen and (max-width: 888px) {
@@ -158,7 +166,6 @@
 
     .heroBox img {
         width: 770px;
-        height: 90%;
     }
 }
 
@@ -177,7 +184,6 @@
 
     .heroBox img {
         width: 570px;
-        height: 80%;
     }
 
     .searchButton button {
@@ -228,6 +234,11 @@
     .wraper {
         width: 300px !important;
     }
+
+    .department {
+        background-size: 170%;
+        background-position: top;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -253,12 +264,8 @@
     }
 
     .heroBox img {
-        width: 400px;
-        height: 70%;
-    }
-
-    .heroSection {
-        height: 70vh;
+        width: 100%;
+        height: 50%;
     }
 
     .section-header {
@@ -268,13 +275,21 @@
     .contact-wrapper {
         padding: 0px;
     }
+
+    .heroSection {
+        height: 50vh;
+    }
+
+    .department {
+        padding: 20px 0px;
+    }
+
+    .resNav {
+        height: 51vh !important;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-    .heroBox img {
-        width: 360px;
-    }
-
     .section-header {
         font-size: 2.1rem;
         padding: 0px;
@@ -289,7 +304,7 @@
     }
 
     .mainBox {
-        padding: 20px 6px 0px 25px !important;
+        padding: 90px 6px 0px 25px !important;
     }
 
     .department {
@@ -303,7 +318,28 @@
     .footerBoxLine {
         width: 230px;
     }
+
     .footer .rights {
         font-size: 1rem;
     }
+
+    .departHeading {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-height: 460px) {
+    .mainBox {
+        padding: 20px 6px 0px 25px !important;
+    }
+
+    .resNav {
+        height: 100vh !important;
+    }
+
+    .wraper {
+        top: 10px !important;
+        height: 390px !important;
+    }
+
 }
