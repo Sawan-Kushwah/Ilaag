@@ -4,11 +4,12 @@
 }
 
 .blackBg {
-    background: #00000047 !important;
+    background: #000000a1 !important;
     position: absolute;
     top: 0px;
     width: 100%;
     z-index: 444;
+    backdrop-filter: blur(3.4px);
 }
 
 #cross {
@@ -69,6 +70,35 @@
 
     .footerRow {
         padding: 10px;
+    }
+
+    #btn-1 {
+        padding: 0.5em .8em;
+    }
+
+    #btn-2 {
+        padding: 0.5em .8em;
+    }
+
+    .flex button {
+        color: white !important;
+    }
+
+    ul li a {
+        color: white;
+    }
+
+    .doctorSearchBar {
+        border: none;
+    }
+
+    .resNav ul {
+        margin: 100px auto;
+        line-height: 2;
+
+    }
+    .hamburger #cross{
+        color: white
     }
 }
 
@@ -145,6 +175,14 @@
         height: 80%;
     }
 
+    .searchButton button {
+        padding: 10px 0px;
+    }
+
+    .searchButton {
+        width: 46%;
+    }
+
 }
 
 @media only screen and (max-width: 460px) {
@@ -181,6 +219,10 @@
     .logo {
         margin: 0;
     }
+
+    .wraper {
+        width: 300px !important;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -213,6 +255,7 @@
     .heroSection {
         height: 70vh;
     }
+
     .section-header {
         font-size: 3rem;
     }

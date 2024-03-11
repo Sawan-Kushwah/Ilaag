@@ -1,5 +1,5 @@
 .flex button {
-    padding: .5em .8em;
+    padding: 0px .8em;
     background: transparent;
     border: 2px solid #62d2a200;
     font-size: 22px;
@@ -10,7 +10,13 @@
 }
 
 .flex button:hover {
-    color: #07f853;
+    color: #07f853 !important;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wraper {
@@ -27,9 +33,9 @@
     justify-content: center;
     align-items: center;
     top: 150px;
-    right: 37%;
     transform: scale(0);
     transition: transform 0.3s ease-in;
+    z-index: 999;
 }
 
 .active-popup {
@@ -156,7 +162,7 @@
     text-decoration: underline;
 }
 
-.wraper-register {
+/* .wraper-register {
     background-color: white;
     position: absolute;
     height: 440px;
@@ -173,7 +179,7 @@
     right: 37%;
     transform: scale(0);
     transition: transform 0.3s ease-in;
-}
+} */
 
 .active-pop {
     transform: scale(1);

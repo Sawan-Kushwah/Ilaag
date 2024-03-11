@@ -12,7 +12,8 @@
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
 
-<body>
+<body onload="myfunction()">
+    <div id="loading"></div>
     <div class="heroSection">
         <div class="heroBox">
             <img src="img/hero-bg.png" alt="hero-bg">
@@ -41,7 +42,7 @@
                 <button class="  loginNav" id="btn-2">Register</button>
             </ul>
         </nav>
-        <section class="login-page">
+        <section class="flexCenter login-page">
             <div class="wraper">
                 <div class="form-login">
                     <h2>login</h2>
@@ -70,8 +71,8 @@
                 </div>
             </div>
         </section>
-        <section class="register-page">
-            <div class="wraper-register">
+        <section class="flexCenter register-page">
+            <div class=" wraper wraper-register">
                 <div class="form-login">
                     <h2>Register</h2>
                     <span class="close"><i class="fa-solid fa-x"></i></span>
