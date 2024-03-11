@@ -1,14 +1,4 @@
-.bgForAboutContact {
-    width: 100%;
-    height: auto;
-    background: url('../img/contact.png') no-repeat center center/cover;
-}
 
-.department {
-    width: 100%;
-    height: auto;
-    background: url('../img/hj.png') no-repeat center center/cover;
-}
 
 .section-header {
     text-align: center;

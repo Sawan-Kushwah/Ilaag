@@ -5,6 +5,10 @@
 
 .blackBg {
     background: #00000047 !important;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 444;
 }
 
 #cross {
@@ -118,7 +122,8 @@
     }
 
     .heroBox img {
-        width: 124%;
+        width: 100%;
+        height: 90%;
     }
 }
 
@@ -137,6 +142,7 @@
 
     .heroBox img {
         width: 100%;
+        height: 80%;
     }
 
 }
@@ -200,11 +206,14 @@
     }
 
     .heroBox img {
-        width: 131%;
+        width: 100%;
         height: 70%;
     }
 
     .heroSection {
         height: 70vh;
+    }
+    .section-header {
+        font-size: 3rem;
     }
 }

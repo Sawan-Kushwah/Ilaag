@@ -5,9 +5,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /* Navbar designing  */
 .hamburger {
     cursor: pointer;
@@ -184,10 +186,6 @@ ul li a {
     transition: all 0.3s ease;
 }
 
-.icon {
-    margin: 6px;
-}
-
 .searchButton {
     width: 12%;
 }
@@ -323,6 +321,7 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row-reverse;
 }
 
 .aboutUsRow .leftBox {
@@ -435,9 +434,11 @@ ul li a {
 .footerBoxLine {
     display: none;
 }
-.departLine{
+
+.departLine {
     display: none;
 }
+
 /* utility classes */
 .flex {
     display: flex;
@@ -445,4 +446,16 @@ ul li a {
 
 p {
     font-family: 'Poppins';
+}
+
+.bgForAboutContact {
+    width: 100%;
+    height: auto;
+    background: url('../img/contact.png') no-repeat center center/cover;
+}
+
+.department {
+    width: 100%;
+    height: auto;
+    background: url('../img/hj.png') no-repeat center center/cover;
 }

@@ -2,7 +2,7 @@ console.log("i am responsive js");
 let navbar = document.getElementsByClassName('flex');
 console.log(navbar);
 let ham = document.getElementById( 'ham' );
-let cross = document.getElementById( 'cross' );
+let clos = document.getElementById( 'cross' );
 console.log(ham) ;
 
 ham.addEventListener('click', () =>{
@@ -13,7 +13,7 @@ ham.addEventListener('click', () =>{
     document.getElementById("ham").style.display="none";
     document.getElementById("cross").style.display="block"; 
 })
-cross.addEventListener('click', () =>{
+clos.addEventListener('click', () =>{
     console.log("click hua");
     navbar.item(0).classList.remove("resNav");
     navbar.item(1).classList.remove("resNav");

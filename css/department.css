@@ -1,0 +1,12 @@
+.departPageCss {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: #004527;
+}
+
+.department {
+    padding: 30px 0px;
+}
+@media only screen  and (max-width: 770px){
+     
+}

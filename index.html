@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
 
@@ -25,21 +26,87 @@
             <div class="webNameBar">
                 <div class="webName">Ilaag</div>
                 <div class="nearMe">
-                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span style="margin: 6px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
                     </span> Near Me
                 </div>
             </div>
         </div>
         <nav class="flex navbar ">
             <ul class="flex">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#abou">About</a></li>
                 <li><a href="#depart">Departments</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">SignUp</a></li>
+                <button class="  loginNav" id="btn-1" action="/login" method="post">Login</button>
+                <button class="  loginNav" id="btn-2">Register</button>
             </ul>
         </nav>
+        <section class="login-page">
+            <div class="wraper">
+                <div class="form-login">
+                    <h2>login</h2>
+                    <span class="off"><i class="fa-solid fa-x"></i></span>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input type="email" required>
+                            <label>E-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forget">
+                            <label id="rem"> <input type="checkbox">Remerber me?</label>
+                            <a href="#">Forget password</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="register-page">
+            <div class="wraper-register">
+                <div class="form-login">
+                    <h2>Register</h2>
+                    <span class="close"><i class="fa-solid fa-x"></i></span>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="username" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input type="email" required>
+                            <label>E-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
 
+                        <div class="remember-forget">
+                            <label id="rem"> <input type="checkbox">I agree to the terms and condition</label>
+
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         <main class="mainBox">
             <div class="heroText">
                 Book your local doctor's appointment in
@@ -65,6 +132,7 @@
             </div>
         </main>
     </div>
+    <!-- hero section ends here -->
 
     <!-- Departments section start here -->
     <section id="depart" class="department">
@@ -109,19 +177,21 @@
             <hr class="departLine">
         </div>
         <div class="departBtn">
-            <button class="btn">View All Departments</button>
+            <a href="html/department.html"><button class="btn">View All Departments</button></a>
         </div>
     </section>
     <!-- Departments section end here -->
+
     <hr>
-    <!-- About us section start here -->
     <section class="bgForAboutContact">
+
+        <!-- About us section start here -->
         <section class="aboutUs" id="abou">
             <h2>ABOUT US</h2>
             <div class="aboutUsRow">
                 <div class="leftBox">
                     <div class="img">
-                        <img src="/img/aboutUs.jpg" alt="Doctor">
+                        <img src="/img/doctor.jpg" alt="Doctor">
                     </div>
                 </div>
                 <div class="rightBox">
@@ -144,7 +214,9 @@
             </div>
         </section>
         <!-- About us section end here -->
+
         <hr>
+
         <!-- contact form section -->
         <section id="contact">
             <h1 class="section-header">Contact Us</h1>
@@ -200,7 +272,9 @@
             </div>
         </section>
         <!-- contact form section ends here-->
+
     </section>
+
     <!-- foorter section start here -->
     <footer class="footer">
         <div class="departRow footerRow">
@@ -248,7 +322,7 @@
                     <h3>Links</h3>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Departments</a></li>
                     <li><a href="#">LogIn</a></li>
                     <li><a href="#">SignUp</a></li>
                 </div>
@@ -274,6 +348,8 @@
 
         </div>
     </footer>
+    <!-- foorter section end here -->
+
     <script src="javascript/script.js"></script>
     <script src="javascript/responsive.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
