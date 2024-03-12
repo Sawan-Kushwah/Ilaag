@@ -178,6 +178,7 @@ ul li a {
     padding: 0px;
 }
 
+.mapSection .inputLocation input,
 .doctorSearchBar input[type="text"] {
     width: 100%;
     outline: none;

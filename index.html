@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/map.css">
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
 
@@ -27,8 +29,10 @@
             <div class="webNameBar">
                 <div class="webName">Ilaag</div>
                 <div class="nearMe">
-                    <span style="margin: 6px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </span> Near Me
+                    <button id="mapOpenButton" class="btn">
+                        <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span> Near Me
+                    </button>
                 </div>
             </div>
         </div>
@@ -38,10 +42,32 @@
                 <li><a href="#abou">About</a></li>
                 <li><a href="#depart">Departments</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <button class="  loginNav" id="btn-1" action="/login" method="post">Login</button>
-                <button class="  loginNav" id="btn-2">Register</button>
+                <button class="loginNav" id="btn-1" action="/login" method="post">Login</button>
+                <button class="loginNav" id="btn-2">Register</button>
             </ul>
         </nav>
+        <section class="mapSection">
+            <div class="mapContainer">
+                <i id="mapClose" class="fa-solid fa-x fa-3x"></i>
+                <div class="locationContainer">
+                    <div class="inputLocation">
+                        <input type="text" id="searchInput" name="city" placeholder="Your location...">
+                    </div>
+                    <span style="width: 1px;"></span>
+                    <div class="searchButton">
+                        <button id="search" onclick="searchLocation()">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div id="map"></div>
+                <form id="locationForm" action="/submit_location" method="POST">
+                    <input type="hidden" id="latitude" name="latitude">
+                    <input type="hidden" id="longitude" name="longitude">
+                    <button type="submit" class="btn locationBtn">Submit</button>
+                </form>
+            </div>
+        </section>
         <section class="flexCenter login-page">
             <div class="wraper">
                 <div class="form-login">
@@ -354,6 +380,8 @@
     <script src="javascript/script.js"></script>
     <script src="javascript/responsive.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="javascript/map.js"></script>
 </body>
 
 </html>
