@@ -27,16 +27,17 @@
 
 .mapContainer i {
     display: block !important;
-    margin: 15px !important;
+    margin: 5px 15px !important;
     cursor: pointer;
 }
 
 .mapSection .mapContainer {
     border: 2px solid;
-    width: 43%;
+    width: 70%;
     backdrop-filter: blur(10px);
     display: none;
     transition: all 0.3s ease-in;
+    height: auto;
 }
 
 .locationContainer {
@@ -55,5 +56,9 @@
 
 .locationBtn {
     width: 50%;
-    margin: 25px 154px 5px 0px;
+    margin: 25px 0px 5px 0px;
+}
+
+#locationForm {
+    text-align: center;
 }
