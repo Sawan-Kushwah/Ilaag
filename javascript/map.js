@@ -38,11 +38,15 @@ initMap();
 let mapOpenButton = document.getElementById("mapOpenButton");
 let mapCloseButton = document.getElementById("mapClose");
 let mapContainer = document.getElementsByClassName("mapContainer");
+let mainBox = document.getElementsByClassName("mainBox");
 console.log(mapContainer);
 
 mapOpenButton.addEventListener('click', () => {
-    mapContainer.item(0).style.display = "block"
+    mapContainer.item(0).style.display = "block";
+    mainBox.item(0).style.display = "none";
 })
 mapCloseButton.addEventListener('click', () => {
-    mapContainer.item(0).style.display = "none"
+    mapContainer.item(0).style.display = "none";
+    mainBox.item(0).style.display = "block";
+
 })
