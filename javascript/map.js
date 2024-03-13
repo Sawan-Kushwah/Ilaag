@@ -2,7 +2,7 @@ let map;
 let marker;
 
 function initMap() {
-    map = L.map('map').setView([51.505, -0.09], 13);
+    map = L.map('map').setView([22.722357081788935, 75.86471723208145], 12);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         maxZoom: 19,
         id: 'mapbox/streets-v11',
@@ -11,7 +11,7 @@ function initMap() {
         accessToken: 'pk.eyJ1IjoibmF3YWJraDIwNDAiLCJhIjoiY2x0aWwydmY2MGRhYzJxbzBnb3ZkZGFwYyJ9.pOki1d8O8P4SW9xX9BrPXA'
     }).addTo(map);
 
-    marker = L.marker([51.505, -0.09], { draggable: true }).addTo(map);
+    marker = L.marker([22.722357081788935, 75.86471723208145], { draggable: true }).addTo(map);
 
     marker.on('dragend', function () {
         document.getElementById("latitude").value = marker.getLatLng().lat;
@@ -25,7 +25,7 @@ function searchLocation() {
         .then(response => response.json())
         .then(data => {
             const { lat, lon } = data[0];
-            map.setView([lat, lon], 13);
+            map.setView([lat, lon], 12);
             marker.setLatLng([lat, lon]);
         })
         .catch(error => console.log('Error:', error));

@@ -178,3 +178,33 @@
          width: 65%;
      }
  }
+
+ /* card css over here */
+
+
+ /* department main section start here */
+
+ #home {
+     height: auto;
+ }
+
+ .wraperBooking {
+     height: auto;
+ }
+
+ #paymentMethod {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     font-size: 2.1rem;
+     cursor: pointer;
+ }
+
+ #paymentBox {
+     border: none;
+     margin-bottom: 0px;
+ }
+
+ #bookingConfirmBtn {
+     margin-top: 0px;
+ }
