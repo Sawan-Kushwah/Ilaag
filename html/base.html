@@ -5,28 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareConnect</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/map.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="website icon" type="png" href="img/logo.png">
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="website icon" type="png" href="../img/logo.png">
 </head>
 
-<body onload="myfunction()">
-    <div id="loading"></div>
+<body>
     <div class="heroSection">
-        <div class="heroBox">
-            <img src="img/hero-bg.png" alt="hero-bg">
-        </div>
         <div class="hamburger">
             <i id="ham" class="fa-solid fa-bars fa-3x"></i>
             <i id="cross" class="fa-solid fa-x fa-3x"></i>
         </div>
         <div class="logo">
-            <img src="img/logo.png" alt="logo">
+            <img src="../img/logo.png" alt="logo">
             <div class="webNameBar">
                 <div class="webName">Ilaag</div>
                 <div class="nearMe">
@@ -128,180 +124,17 @@
 
                         <div class="remember-forget">
                             <label id="rem"> <input type="checkbox">I agree to the terms and condition</label>
-
                         </div>
                         <button type="submit" class="btn">Register</button>
                     </form>
                 </div>
             </div>
         </section>
-        <main class="mainBox">
-            <div class="heroText">
-                Book your local doctor's appointment in
-                <br>
-                just a few steps!
-            </div>
-            <div class="doctorSearchBar">
-                <form action="{% url 'home' %}" method="post">
-                    <div class="inputCondition">
-                        <input type="text" placeholder="Enter condition or symptom...">
-                    </div>
-                    <span style="width: 1px;"></span>
-                    <div class="inputLocation">
-                        <input type="text" name="city" placeholder="Your location...">
-                    </div>
-                    <span style="width: 1px;"></span>
-                    <div class="searchButton">
-                        <button id="search">
-                            Search
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </main>
     </div>
     <hr class="departLine">
     <!-- hero section ends here -->
 
-    <!-- Departments section start here -->
-    <section id="depart" class="department">
-        <div class="departHead">
-            <h1 class="departHeading">OUR DEPARTMENTS</h1>
-            <p class="departPara">Our department pioneers seamless healthcare access through intuitive technology and
-                strategic partnerships</p>
-        </div>
-        <hr class="departLine">
-        <div class="departRow">
-            <div class="box">
-                <div class="imgBox"><i class="fa-solid fa-heart-pulse fa-3x"></i></div>
-                <div class="details">
-                    <h3>Cardiology</h3>
-                    <p>Heart disease diagnosis, treatment, prevention, cardiovascular health promotion.</p>
-                </div>
-            </div>
-            <hr class="departLine">
-            <div class="box">
-                <div class="imgBox"><i class="fa-solid fa-tooth fa-3x"></i></div>
-                <div class="details">
-                    <h3>Dentist</h3>
-                    <p>Involves oral health, mouth-related issues, and promoting preventive care practices</p>
-                </div>
-            </div>
-            <hr class="departLine">
-            <div class="box">
-                <div class="imgBox"><i class="fa-solid fa-x-ray fa-3x"></i></div>
-                <div class="details">
-                    <h3>Sonography</h3>
-                    <p> It uses high-frequency sound waves to create images of internal body structures.</p>
-                </div>
-            </div>
-            <hr class="departLine">
-            <div class="box">
-                <div class="imgBox"><i class="fa-solid fa-notes-medical fa-3x"></i></div>
-                <div class="details">
-                    <h3>Diagnosis</h3>
-                    <p>Identifying health issues through signs, symptoms,medical tests for accurate treatment</p>
-                </div>
-            </div>
-        </div>
-        <div class="departBtn">
-            <a href="html/department.html"><button class="btn">View All Departments</button></a>
-        </div>
-    </section>
-    <!-- Departments section end here -->
 
-    <hr>
-    <section class="bgForAboutContact">
-
-        <!-- About us section start here -->
-        <section class="aboutUs" id="abou">
-            <h2>ABOUT US</h2>
-            <div class="aboutUsRow">
-                <div class="leftBox">
-                    <div class="img">
-                        <img src="/img/doctor.jpg" alt="Doctor">
-                    </div>
-                </div>
-                <div class="rightBox">
-                    <p>we're proud to introduce our platform as a pioneering solution in healthcare accessibility.
-                        Committed
-                        to simplifying the patient journey, we leverage cutting-edge technology and strategic
-                        partnerships
-                        to redefine the way individuals access medical care. Our mission is to empower users with
-                        convenient
-                        tools for booking appointments, connecting with trusted healthcare providers, and promoting
-                        proactive wellness management. With a focus on user-centric design and a dedication to
-                        excellence,
-                        we aim to revolutionize healthcare access and elevate the standard of patient experience.</p>
-                    <div class="aboutBtn">
-                        <button class="btn">
-                            Read More
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About us section end here -->
-
-        <hr>
-
-        <!-- contact form section -->
-        <section id="contact">
-            <h1 class="section-header">Contact Us</h1>
-            <div class="contact-wrapper">
-                <!-- Left contact page -->
-                <form id="contact-form" class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" id="phone" placeholder="PHONE NO." name="phone" value=""
-                            required>
-                    </div>
-                    <textarea class="form-control" rows="8" placeholder="MESSAGE" name="message" required></textarea>
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">SEND</button>
-                </form>
-                <!-- Right contact page -->
-                <div class="direct-contact-container">
-                    <ul class="contact-list">
-                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a
-                                        href="Indore , India" title="Find me">Indore/India</a></span></i></li>
-
-                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                        href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i>
-                        </li>
-
-                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                        href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-                    </ul>
-                    <hr>
-                    <ul class="social-media-list">
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-                </div>
-            </div>
-        </section>
-        <!-- contact form section ends here-->
-
-    </section>
 
     <!-- foorter section start here -->
     <footer class="footer">
@@ -378,11 +211,11 @@
     </footer>
     <!-- foorter section end here -->
 
-    <script src="javascript/script.js"></script>
-    <script src="javascript/responsive.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/responsive.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="javascript/map.js"></script>
+    <script src="../javascript/map.js"></script>
 </body>
 
 </html>

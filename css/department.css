@@ -84,6 +84,7 @@
      justify-content: center;
      text-align: center;
      letter-spacing: 1px;
+     margin-bottom: 15px;
  }
 
  #price {
@@ -100,4 +101,80 @@
      margin: 0px 8px;
      color: green;
      font-size: 16px;
+ }
+
+ /* Responsive Card CSS */
+ @media screen and (max-width: 992px) {
+     .blog-slider {
+         max-width: 680px;
+         height: 400px;
+     }
+ }
+
+ @media screen and (max-height: 500px) and (min-width: 992px) {
+     .blog-slider {
+         height: 350px;
+     }
+
+     .blog-slider__img {
+         height: 270px;
+     }
+ }
+
+
+ @media screen and (max-width: 768px) {
+     .blog-slider__content {
+         margin-top: -80px;
+         text-align: center;
+         padding: 0 30px;
+     }
+
+     .blog-slider__img {
+         transform: translateY(-50%);
+         width: 90%;
+     }
+
+     .blog-slider__item {
+         flex-direction: column;
+     }
+
+     .blog-slider {
+         min-height: 500px;
+         height: auto;
+         margin: 180px auto;
+     }
+ }
+
+ @media screen and (max-width: 576px) {
+     .blog-slider__content {
+         padding: 0;
+         margin-top: -140px;
+     }
+
+     .blog-slider__button {
+         width: 100%;
+     }
+
+     .blog-slider__img {
+         width: 95%;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+     .blog-slider__content {
+         margin-top: -155px;
+     }
+
+     .blog-slider {
+         width: 100%;
+         padding: 0px;
+     }
+
+     .originalPrice {
+         justify-content: center;
+     }
+
+     .blog-slider__button {
+         width: 65%;
+     }
  }
