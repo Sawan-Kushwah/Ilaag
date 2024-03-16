@@ -36,11 +36,16 @@ initMap();
 
 //opening and closing of map 
 let mapOpenButton = document.getElementById("mapOpenButton");
+let mapOpenButton1 = document.getElementById("mapOpenButton1");
 let mapCloseButton = document.getElementById("mapClose");
 let mapContainer = document.getElementsByClassName("mapContainer");
 let mainBox = document.getElementsByClassName("mainBox");
 console.log(mapContainer);
 
+mapOpenButton1.addEventListener('click', () => {
+    mapContainer.item(0).style.display = "block";
+    mainBox.item(0).style.display = "none";
+})
 mapOpenButton.addEventListener('click', () => {
     mapContainer.item(0).style.display = "block";
     mainBox.item(0).style.display = "none";

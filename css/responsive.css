@@ -17,8 +17,24 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .flex ul li a {
+        color: white;
+    }
+
+    .logoShowOnResponsive {
+        display: flex !important;
+    }
+
+    .navbar {
+        position: absolute !important;
+    }
+
+    .logoHideOnResponsive {
+        display: none !important;
+    }
+
     .hamburger {
-        display: block;
+        display: block !important;
     }
 
     .flex {
@@ -32,12 +48,8 @@
     }
 
     .heroText {
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-    }
-
-    .searchButton {
-        width: 18%;
+        font-size: 2.8rem !important;
+        line-height: 3.4rem !important;
     }
 
     .doctorSearchBar form {
@@ -52,7 +64,7 @@
     }
 
     .searchButton {
-        width: 40%;
+        width: 40% !important;
         margin: auto;
     }
 
@@ -107,7 +119,7 @@
     }
 
     .heroSection {
-        height: 65vh;
+        height: 65vh !important;
     }
 
     .locationBtn {
@@ -125,7 +137,7 @@
 
 @media only screen and (max-width: 888px) {
     .heroText {
-        font-size: 2.2rem;
+        font-size: 2.2rem !important;
     }
 
     .details p {
@@ -270,8 +282,8 @@
     }
 
     .heroText {
-        font-size: 1.2rem;
-        line-height: 2.4rem;
+        font-size: 1.2rem !important;
+        line-height: 2.4rem !important;
     }
 
     .contact-text a {
@@ -295,7 +307,7 @@
     }
 
     .heroSection {
-        height: 50vh;
+        height: 50vh !important;
     }
 
     .department {
@@ -335,7 +347,7 @@
     }
 
     .heroText {
-        line-height: 1.4rem;
+        line-height: 1.4rem !important;
     }
 
     .mainBox {

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background: #009579;
 }
 
 .container {
@@ -46,7 +46,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background: #009579;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -55,5 +55,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #006653;
 }

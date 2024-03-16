@@ -1,0 +1,121 @@
+.footer {
+    background: #178066;
+    color: #ffffff;
+}
+
+.footerRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+}
+
+.footerRow h3 {
+    font-family: Open Sans;
+    font-size: 1.6rem;
+}
+
+.footerReachAt .contact-text a {
+    color: #fff;
+    transition-duration: 0.2s;
+    font-size: 1rem;
+}
+
+.footerReachAt .list-item {
+    line-height: 0;
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerSocial i {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.footerSocial i:hover {
+    color: aqua;
+    font-size: 1.7rem;
+}
+
+.footerRow #quickLinks li {
+    list-style: none;
+    margin: 9px 0px;
+}
+
+.footerRow #quickLinks li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footerRow #quickLinks li a:hover {
+    color: rgb(198, 193, 193);
+    font-size: 1.1rem;
+}
+
+#footerEmail {
+    width: 67%;
+    margin: 35px 0px 19px 0px;
+    background: white;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#footerBtn {
+    margin-top: 10px;
+    width: 77%;
+    background: #07c886;
+    border: 2px solid #06ba7d;
+}
+
+#footerBtn:hover {
+    background: white;
+}
+
+.footer .rights {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+
+.rights :nth-last-child(1) {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.8rem;
+}
+
+.footerBoxLine {
+    display: none;
+}
+
+.departLine {
+    display: none;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
+
+p {
+    font-family: 'Poppins';
+}
+
+.bgForAboutContact {
+    width: 100%;
+    height: auto;
+    background: url('../img/contact.png') no-repeat center center/cover;
+}
+
+.department {
+    width: 100%;
+    height: auto;
+    background: url('../img/hj.png') no-repeat center center/cover;
+}

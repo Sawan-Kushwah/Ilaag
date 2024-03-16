@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareConnect</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="website icon" type="png" href="../img/logo.png">
     <link rel="stylesheet" href="../css/department.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="website icon" type="png" href="../img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
-    <div class="heroSection" id="home">
+    <!-- <div class="heroSection" id="home">
         <div class="hamburger">
             <i id="ham" class="fa-solid fa-bars fa-3x"></i>
             <i id="cross" class="fa-solid fa-x fa-3x"></i>
@@ -36,97 +37,48 @@
         </div>
         <nav class="flex navbar ">
             <ul class="flex">
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#abou">About</a></li>
                 <li><a href="#depart">Departments</a></li>
-                <li><a href="../index.html">Contact</a></li>
-                <button class="loginNav" id="btn-1" action="/login" method="post">Login</button>
-                <button class="loginNav" id="btn-2">Register</button>
-            </ul>
-        </nav>
-        <section class="mapSection">
-            <div class="mapContainer">
-                <i id="mapClose" class="fa-solid fa-x fa-3x"></i>
-                <div class="locationContainer">
-                    <div class="inputLocation">
-                        <input type="text" id="searchInput" name="city" placeholder="Your location...">
-                    </div>
-                    <span style="width: 1px;"></span>
-                    <div class="searchButton">
-                        <button id="search" onclick="searchLocation()">
-                            Search
-                        </button>
+                <li><a href="#contact">Contact</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Pages
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="department.html">Department</a>
+                        <a href="login.html">Login/signUp</a>
+                        <a href="addDoctor.html">Add Doctor</a>
+                        <a href="doctorAppointment.html">Get Appointment</a>
                     </div>
                 </div>
-                <div id="map"></div>
-                <form id="locationForm" action="/submit_location" method="POST">
-                    <input type="hidden" id="latitude" name="latitude">
-                    <input type="hidden" id="longitude" name="longitude">
-                    <button type="submit" class="btn locationBtn">Submit</button>
-                </form>
-            </div>
-        </section>
-        <section class="flexCenter login-page">
-            <div class="wraper">
-                <div class="form-login">
-                    <h2>login</h2>
-                    <span class="off"><i class="fa-solid fa-x"></i></span>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <input type="email" placeholder="Email" required>
-                         </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-lock"></i>
-                            </span>
-                            <input type="password" placeholder="Password" required>
-                         </div>
-                        <div class="remember-forget">
-                            <label id="rem"> <input type="checkbox">Remerber me?</label>
-                            <a href="#">Forget password</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="flexCenter register-page">
-            <div class=" wraper wraper-register">
-                <div class="form-login">
-                    <h2>Register</h2>
-                    <span class="close"><i class="fa-solid fa-x"></i></span>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            <input type="username" placeholder="Username" required>
-                         </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <input type="email" placeholder="Email" required>
-                         </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-lock"></i>
-                            </span>
-                            <input type="password" placeholder="Password" required>
-                         </div>
+                <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
 
-                        <div class="remember-forget">
-                            <label id="rem"> <input type="checkbox">I agree to the terms and condition</label>
-                        </div>
-                        <button type="submit" class="btn">Register</button>
-                    </form>
+    </ul>
+    </nav>
+    <section class="mapSection">
+        <div class="mapContainer">
+            <i id="mapClose" class="fa-solid fa-x fa-3x"></i>
+            <div class="locationContainer">
+                <div class="inputLocation">
+                    <input type="text" id="searchInput" name="city" placeholder="Your location...">
+                </div>
+                <span style="width: 1px;"></span>
+                <div class="searchButton">
+                    <button id="search" onclick="searchLocation()">
+                        Search
+                    </button>
                 </div>
             </div>
-        </section>
-    </div>
+            <div id="map"></div>
+            <form id="locationForm" action="/submit_location" method="POST">
+                <input type="hidden" id="latitude" name="latitude">
+                <input type="hidden" id="longitude" name="longitude">
+                <button type="submit" class="btn locationBtn">Submit</button>
+            </form>
+        </div>
+    </section>
+    </div> -->
     <hr class="departLine">
     <!-- hero section ends here -->
 
@@ -172,53 +124,7 @@
                 </div>
             </div>
         </div>
-        <section class="flexCenter login-page bookingPage">
-            <div class="wraper wraperBooking">
-                <div class="form-login">
-                    <h2>Book Now</h2>
-                    <span class="band off"><i class="fa-solid fa-x"></i></span>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-signature"></i> </span>
-                            <input type="name" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <input type="email" placeholder="Enter Email" required>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-phone"></i> </span>
-                            <input type="tel" placeholder="Mobile number" required>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon">
-                            </span>
-                            <input type="date" placeholder="Appointment Date" required>
-                        </div>
-                        <label id="appointment">Appointment Date</label>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-address-book"></i></span>
-                            <input type="text" placeholder="Enter Address" required>
-                        </div>
-                        <div class="input-box" id="paymentBox">
-                            <span class="icon" id="paymentMethod">
-                                <i class="fa-brands fa-paypal"></i>
-                                <i class="fa-brands fa-amazon-pay"></i>
-                                <i class="fa-brands fa-apple-pay"></i>
-                                <i class="fa-brands fa-google-pay"></i>
-                            </span>
 
-                        </div>
-                        <button type="submit" class="btn" id="bookingConfirmBtn">Confirm</button>
-                    </form>
-                </div>
-            </div>
-        </section>
     </section>
 
 
@@ -296,6 +202,9 @@
     <script src="../javascript/script.js"></script>
     <script src="../javascript/responsive.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../javascript/map.js"></script>
+
 </body>
 
 </html>
