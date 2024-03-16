@@ -1,21 +1,3 @@
-.resNav {
-    display: flex !important;
-    height: 70vh !important;
-}
-
-.blackBg {
-    background: #000000a1 !important;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 444;
-    backdrop-filter: blur(3.4px);
-}
-
-#cross {
-    display: none;
-}
-
 @media only screen and (max-width: 1000px) {
     .flex ul li a {
         color: white;
@@ -27,6 +9,7 @@
 
     .navbar {
         position: absolute !important;
+        /* display: none !important; */
     }
 
     .logoHideOnResponsive {
@@ -40,11 +23,11 @@
     .flex {
         flex-direction: column;
         align-items: center;
-        display: none;
+        display: none !important;
     }
 
     .mainBox {
-        padding: 155px 30px 155px 30px;
+        padding: 25px 30px 155px 30px;
     }
 
     .heroText {
@@ -243,7 +226,7 @@
     }
 
     .mainBox {
-        padding: 70px 6px 70px 25px;
+        padding: 20px 6px 70px 25px;
     }
 
     .aboutUsRow .rightBox {
@@ -351,7 +334,7 @@
     }
 
     .mainBox {
-        padding: 90px 6px 0px 25px !important;
+        padding: 30px 6px 0px 25px !important;
     }
 
     .department {
@@ -398,4 +381,22 @@
         height: 390px !important;
     }
 
+}
+
+.resNav {
+    display: flex !important;
+    height: 70vh !important;
+}
+
+.blackBg {
+    background: #000000a1 !important;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 444;
+    backdrop-filter: blur(3.4px);
+}
+
+#cross {
+    display: none;
 }
