@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="website icon" type="png" href="../img/logo.png">
 </head>
 
@@ -21,12 +22,12 @@
             <i id="ham" class="fa-solid fa-bars fa-3x"></i>
             <i id="cross" class="fa-solid fa-x fa-3x"></i>
         </div>
-        <div class="logo">
-            <img src="../img/logo.png" alt="logo">
+        <div class="logo logoShowOnResponsive">
+            <img src="/img/logo.png" alt="logo">
             <div class="webNameBar">
                 <div class="webName">Ilaag</div>
                 <div class="nearMe">
-                    <button id="mapOpenButton" class="btn">
+                    <button id="mapOpenButton1" class="btn">
                         <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         </span> Near Me
                     </button>
@@ -34,13 +35,36 @@
             </div>
         </div>
         <nav class="flex navbar ">
+            <div class="logo  logoHideOnResponsive">
+                <img src="/img/logo.png" alt="logo">
+                <div class="webNameBar">
+                    <div class="webName">Ilaag</div>
+                    <div class="nearMe">
+                        <button id="mapOpenButton" class="btn">
+                            <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span> Near Me
+                        </button>
+                    </div>
+                </div>
+            </div>
             <ul class="flex">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#abou">About</a></li>
                 <li><a href="#depart">Departments</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <button class="loginNav" id="btn-1" action="/login" method="post">Login</button>
-                <button class="loginNav" id="btn-2">Register</button>
+                <div class="dropdown">
+                    <button class="dropbtn">Pages
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/html/department.html">Department</a>
+                        <a href="/html/login.html">Login/signUp</a>
+                        <a href="/html/addDoctor.html">Add Doctor</a>
+                        <a href="/html/doctorAppointment.html">Get Appointment</a>
+                    </div>
+                </div>
+                <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
+
             </ul>
         </nav>
         <section class="mapSection">
@@ -63,71 +87,6 @@
                     <input type="hidden" id="longitude" name="longitude">
                     <button type="submit" class="btn locationBtn">Submit</button>
                 </form>
-            </div>
-        </section>
-        <section class="flexCenter login-page">
-            <div class="wraper">
-                <div class="form-login">
-                    <h2>login</h2>
-                    <span class="off"><i class="fa-solid fa-x"></i></span>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <input type="email" required>
-                            <label>E-mail</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-lock"></i>
-                            </span>
-                            <input type="password" required>
-                            <label>Password</label>
-                        </div>
-                        <div class="remember-forget">
-                            <label id="rem"> <input type="checkbox">Remerber me?</label>
-                            <a href="#">Forget password</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="flexCenter register-page">
-            <div class=" wraper wraper-register">
-                <div class="form-login">
-                    <h2>Register</h2>
-                    <span class="close"><i class="fa-solid fa-x"></i></span>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            <input type="username" required>
-                            <label>Username</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <input type="email" required>
-                            <label>E-mail</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon">
-                                <i class="fa-solid fa-lock"></i>
-                            </span>
-                            <input type="password" required>
-                            <label>Password</label>
-                        </div>
-
-                        <div class="remember-forget">
-                            <label id="rem"> <input type="checkbox">I agree to the terms and condition</label>
-                        </div>
-                        <button type="submit" class="btn">Register</button>
-                    </form>
-                </div>
             </div>
         </section>
     </div>
@@ -181,11 +140,11 @@
             <div class="box">
                 <div class="details" id="quickLinks">
                     <h3>Links</h3>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Departments</a></li>
-                    <li><a href="#">LogIn</a></li>
-                    <li><a href="#">SignUp</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/html/department.html">Departments</a></li>
+                    <li><a href="/html/login.html">LogIn</a></li>
+                    <li><a href="/html/doctorAppointment.html">Book Appointment</a></li>
                 </div>
             </div>
             <hr class="footerBoxLine">

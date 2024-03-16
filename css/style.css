@@ -130,6 +130,7 @@ html {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    text-align: center;
 }
 
 .departRow .box .imgBox {

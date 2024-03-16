@@ -119,3 +119,40 @@ p {
     height: auto;
     background: url('../img/hj.png') no-repeat center center/cover;
 }
+
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #00162e;
+}
+
+.place {
+    margin-left: 10px;
+}
+
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #00162e;
+    font-size: 2rem;
+}
+
+.contact-text a {
+    color: #000000;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    font-size: 1.8rem;
+}
+
+#footerEmail {
+    width: 67%;
+    margin: 35px 0px 19px 0px;
+    background: white;
+    border-radius: 7px;
+    font-size: 15px;
+}

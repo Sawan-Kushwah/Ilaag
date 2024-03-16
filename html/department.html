@@ -7,28 +7,26 @@
     <title>CareConnect</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/department.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="website icon" type="png" href="../img/logo.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
-    <!-- <div class="heroSection" id="home">
+    <div class="heroSection" style="height: auto;">
         <div class="hamburger">
             <i id="ham" class="fa-solid fa-bars fa-3x"></i>
             <i id="cross" class="fa-solid fa-x fa-3x"></i>
         </div>
-        <div class="logo">
-            <img src="../img/logo.png" alt="logo">
+        <div class="logo logoShowOnResponsive">
+            <img src="/img/logo.png" alt="logo">
             <div class="webNameBar">
                 <div class="webName">Ilaag</div>
                 <div class="nearMe">
-                    <button id="mapOpenButton" class="btn">
+                    <button id="mapOpenButton1" class="btn">
                         <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         </span> Near Me
                     </button>
@@ -36,8 +34,20 @@
             </div>
         </div>
         <nav class="flex navbar ">
+            <div class="logo  logoHideOnResponsive">
+                <img src="/img/logo.png" alt="logo">
+                <div class="webNameBar">
+                    <div class="webName">Ilaag</div>
+                    <div class="nearMe">
+                        <button id="mapOpenButton" class="btn">
+                            <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span> Near Me
+                        </button>
+                    </div>
+                </div>
+            </div>
             <ul class="flex">
-                <li><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#abou">About</a></li>
                 <li><a href="#depart">Departments</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -46,16 +56,43 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="department.html">Department</a>
-                        <a href="login.html">Login/signUp</a>
-                        <a href="addDoctor.html">Add Doctor</a>
-                        <a href="doctorAppointment.html">Get Appointment</a>
+                        <a href="/html/department.html">Department</a>
+                        <a href="/html/login.html">Login/signUp</a>
+                        <a href="/html/addDoctor.html">Add Doctor</a>
+                        <a href="/html/doctorAppointment.html">Get Appointment</a>
                     </div>
                 </div>
                 <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
 
-    </ul>
-    </nav>
+            </ul>
+        </nav>
+        <section class="mapSection">
+            <div class="mapContainer">
+                <i id="mapClose" class="fa-solid fa-x fa-3x"></i>
+                <div class="locationContainer">
+                    <div class="inputLocation">
+                        <input type="text" id="searchInput" name="city" placeholder="Your location...">
+                    </div>
+                    <span style="width: 1px;"></span>
+                    <div class="searchButton">
+                        <button id="search" onclick="searchLocation()">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div id="map"></div>
+                <form id="locationForm" action="/submit_location" method="POST">
+                    <input type="hidden" id="latitude" name="latitude">
+                    <input type="hidden" id="longitude" name="longitude">
+                    <button type="submit" class="btn locationBtn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <hr class="departLine">
+    <!-- hero section ends here -->
+
+
     <section class="mapSection">
         <div class="mapContainer">
             <i id="mapClose" class="fa-solid fa-x fa-3x"></i>
@@ -118,7 +155,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" id="bookNow" class="blog-slider__button">Book Now</a>
+                            <a href="./doctorAppointment.html" id="bookNow" class="blog-slider__button">Book Now</a>
                         </div>
                     </div>
                 </div>
