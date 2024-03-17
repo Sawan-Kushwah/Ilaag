@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareConnect || User || Login & Registration Form</title>
+    <title>CareConnect || Doctor || Login & Registration Form</title>
     <!---Custom CSS File--->
     <link rel="stylesheet" href="../css/login.css">
 </head>
@@ -13,25 +13,28 @@
     <div class="container">
         <input type="checkbox" id="check">
         <div class="login form">
-            <header>Login User</header>
+            <header>Login Doctor</header>
             <form action="#">
-                <input type="text" placeholder="Enter your email" id="emailForLoginUser">
-                <input type="password" placeholder="Enter your password" id="passwordForLoginUser">
+                <input type="text" placeholder="Enter your email" id="emailForLoginDoctor">
+                <input type="password" placeholder="Enter your password" id="passwordForLoginDoctor">
                 <a href="#">Forgot password?</a>
-                <input type="submit" class="button" value="Login" id="loginUser" onclick="authUser()">
+                <input type="submit" class="button" value="Login" onclick="auth()">
             </form>
             <div class="signup">
                 <span class="signup">Don't have an account?
                     <label for="check">Signup</label>
                     <br>
-                    <a href="../html/doctorLogin.html">Are you a doctor?</a>
+                    <a href="../html/login.html">Are you a User?</a>
                 </span>
             </div>
         </div>
         <div class="registration form">
-            <header>Signup User</header>
+            <header>Signup Doctor</header>
             <form action="#">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 <input type="text" placeholder="Enter your email">
+                <input type="text" id="specialty" name="specialty" placeholder="Enter your specialty" required>
+                <textarea id="address" name="address" placeholder="Enter your address" rows="4"></textarea>
                 <input type="password" placeholder="Create a password">
                 <input type="password" placeholder="Confirm your password">
                 <input type="button" class="button" value="Signup">
@@ -40,7 +43,7 @@
                 <span class="signup">Already have an account?
                     <label for="check">Login</label>
                     <br>
-                    <a href="../html/addDoctor.html">Are you a doctor?</a>
+                    <a href="../html/login.html">Are you a User?</a>
                 </span>
             </div>
         </div>

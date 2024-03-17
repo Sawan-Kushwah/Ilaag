@@ -63,10 +63,23 @@
                     <div class="dropdown-content">
                         <a href="./html/department.html" target="_blank">Department</a>
                         <a href="./html/login.html" target="_blank">Login/signUp</a>
-                        <a href="./html/addDoctor.html" target="_blank">Add Doctor</a>
                         <a href="./html/doctorAppointment.html" target="_blank">Get Appointment</a>
                     </div>
                 </div>
+                <div class="dropdown user userProfile">
+                    <div class="userImage">
+                        <button class="dropbtn"><img src="/img/user.jpg" alt="" style="width: 50px; border-radius: 50%;">
+                    </div>
+                    </button>
+                    <div class="dropdown-content" style="min-width: auto;">
+                        <a href="./html/user.html" target="_blank">Profile</a>
+                        <a href="./html/doctorAppointment.html" target="_blank">Booking</a>
+                        <!-- <button class="btn" onclick="logoutUser()">logout</button> -->
+                        <a href="" onclick="logoutUser()">Log-Out</a>
+                    </div>
+                </div>
+
+
                 <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
 
             </ul>
@@ -338,6 +351,7 @@
 
     <script src="javascript/script.js"></script>
     <script src="javascript/responsive.js"></script>
+    <script src="javascript/login.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="javascript/map.js"></script>
