@@ -8,6 +8,7 @@
 				initial-scale=1.0">
     <title>Doctor Dashboard</title>
     <link rel="stylesheet" href="../doctor/doctor.css">
+    <link rel="stylesheet" href="doctorProfile.css">
 </head>
 
 <body>
@@ -40,36 +41,27 @@
     </header>
 
     <div class="main-container">
+
+        <!-- navbar start here -->
         <div class="navcontainer">
             <nav class="nav">
                 <div class="nav-upper-options">
-                    <div class="nav-option option1">
+                    <div class="nav-option option1 active">
                         <i class="fa-brands fa-square-xing fa-2x"></i>
                         <h3> Dashboard</h3>
                     </div>
 
-                    <!-- <div class="option2 nav-option">
-                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
-                            class="nav-img" alt="articles">
-                        <h3> Articles</h3>
-                    </div> -->
-
-                    <div class="nav-option option3">
-                        <i class="fa-solid fa-newspaper fa-2x"></i>
-                        <h3> Report</h3>
-                    </div>
-
-                    <div class="nav-option option4">
-                        <i class="fa-solid fa-hospital fa-2x"></i>
-                        <h3> Hospital</h3>
-                    </div>
-
-                    <div class="nav-option option5">
+                    <div class="nav-option option2">
                         <i class="fa-solid fa-user-doctor fa-2x"></i>
                         <h3> Profile</h3>
                     </div>
 
-                    <div class="nav-option option6">
+                    <div class="nav-option option3">
+                        <i class="fa-solid fa-hospital fa-2x"></i>
+                        <h3> Hospital</h3>
+                    </div>
+
+                    <div class="nav-option option4">
                         <i class="fa-solid fa-gear fa-2x"></i>
                         <h3> Settings</h3>
                     </div>
@@ -82,16 +74,19 @@
                 </div>
             </nav>
         </div>
+        <!-- navbar ends here -->
+
+        <!-- main container of page -->
         <div class="main">
 
             <div class="searchbar2">
                 <input type="text" name="" id="" placeholder="Search">
                 <div class="searchbtn">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-                        class="icn srchicn" alt="search-button">
+                    <i class="fa-solid fa-magnifying-glass fa-2x" style="color: white;"></i>
                 </div>
             </div>
 
+            <!-- comment like are here -->
             <div class="box-container">
 
                 <div class="box box1">
@@ -130,137 +125,372 @@
                     <i class="fa-solid fa-circle-check fa-3x" style="color: white;"></i>
                 </div>
             </div>
+            <!-- comment like are end here -->
 
-            <!-- Appointment Section -->
-            <div class="report-container">
-                <div class="report-header">
-                    <h1 class="recent-Articles">Appointment</h1>
-                    <button class="view">Today</button>
-                </div>
-
-                <div class="report-body">
-                    <div class="report-topic-heading">
-                        <h3 class="t-op">Name</h3>
-                        <h3 class="t-op">Number</h3>
-                        <h3 class="t-op">Date</h3>
-                        <h3 class="t-op">Test</h3>
-                        <h3 class="t-op">Status</h3>
+            <section class="dashboard">
+                <!--today Appointment  Section -->
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">Appointment</h1>
+                        <button class="view">Today</button>
                     </div>
 
-                    <div class="items">
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Moris</h3>
-                            <h3 class="t-op-nextlvl" style="text-align: center;">458547545</h3>
-                            <h3 class="t-op-nextlvl">2 march 2024</h3>
-                            <h3 class="t-op-nextlvl">X-Ray</h3>
-                            <h3 class="t-op-nextlvl label-tag">Finished</h3>
+                    <div class="report-body">
+                        <div class="report-topic-heading">
+                            <h3 class="t-op">Name</h3>
+                            <h3 class="t-op">Number</h3>
+                            <h3 class="t-op">Date</h3>
+                            <h3 class="t-op">Test</h3>
+                            <h3 class="t-op">Status</h3>
                         </div>
 
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Smith</h3>
-                            <h3 class="t-op-nextlvl">65466445</h3>
-                            <h3 class="t-op-nextlvl">4 April 2024</h3>
-                            <h3 class="t-op-nextlvl">Blood-test</h3>
-                            <h3 class="t-op-nextlvl"> Pending...</h3>
-                        </div>
+                        <div class="items">
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Moris</h3>
+                                <h3 class="t-op-nextlvl" style="text-align: center;">458547545</h3>
+                                <h3 class="t-op-nextlvl">2 march 2024</h3>
+                                <h3 class="t-op-nextlvl">X-Ray</h3>
+                                <h3 class="t-op-nextlvl label-tag">Finished</h3>
+                            </div>
 
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Joe</h3>
-                            <h3 class="t-op-nextlvl">456486445</h3>
-                            <h3 class="t-op-nextlvl">4 May 2024</h3>
-                            <h3 class="t-op-nextlvl">Sonography</h3>
-                            <h3 class="t-op-nextlvl"> Cancelled</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Smith</h3>
+                                <h3 class="t-op-nextlvl">65466445</h3>
+                                <h3 class="t-op-nextlvl">4 April 2024</h3>
+                                <h3 class="t-op-nextlvl">Blood-test</h3>
+                                <h3 class="t-op-nextlvl"> Pending...</h3>
+                            </div>
 
-
-            <div class="report-container">
-                <div class="report-header">
-                    <h1 class="recent-Articles">Appointment Request</h1>
-                    <button class="view">View All</button>
-                </div>
-
-                <div class="report-body">
-                    <div class="report-topic-heading">
-                        <h3 class="t-op">Name</h3>
-                        <h3 class="t-op">Number</h3>
-                        <h3 class="t-op">Date</h3>
-                        <h3 class="t-op">Test</h3>
-                        <h3 class="t-op">Status</h3>
-                    </div>
-
-                    <div class="items">
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Jhon</h3>
-                            <h3 class="t-op-nextlvl" style="text-align: center;">458547545</h3>
-                            <h3 class="t-op-nextlvl">2 march 2024</h3>
-                            <h3 class="t-op-nextlvl">X-Ray</h3>
-                            <h3 class="t-op-nextlvl label-tag">Accepted</h3>
-                        </div>
-
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Smith</h3>
-                            <h3 class="t-op-nextlvl">65466445</h3>
-                            <h3 class="t-op-nextlvl">4 April 2024</h3>
-                            <h3 class="t-op-nextlvl">Blood-test</h3>
-                            <h3 class="t-op-nextlvl"><i class="fa-regular fa-circle-check fa-2x"
-                                    style="margin-right: 10px; color: green; cursor: pointer;"></i> <i
-                                    class="fa-regular fa-circle-xmark fa-2x" style="color: red; cursor: pointer;"></i>
-                            </h3>
-                        </div>
-
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Joe</h3>
-                            <h3 class="t-op-nextlvl">456486445</h3>
-                            <h3 class="t-op-nextlvl">4 May 2024</h3>
-                            <h3 class="t-op-nextlvl">Sonography</h3>
-                            <h3 class="t-op-nextlvl"><i class="fa-regular fa-circle-check fa-2x"
-                                    style="margin-right: 10px; color: green; cursor: pointer;"></i> <i
-                                    class="fa-regular fa-circle-xmark fa-2x" style="color: red; cursor: pointer;"></i>
-                            </h3>
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Joe</h3>
+                                <h3 class="t-op-nextlvl">456486445</h3>
+                                <h3 class="t-op-nextlvl">4 May 2024</h3>
+                                <h3 class="t-op-nextlvl">Sonography</h3>
+                                <h3 class="t-op-nextlvl"> Cancelled</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- today appointment section ends here -->
 
-            <!-- Report Section -->
-            <div class="report-container">
-                <div class="report-header">
-                    <h1 class="recent-Articles">Recent patients</h1>
-                    <button class="view">View All</button>
-                </div>
-
-                <div class="report-body">
-                    <div class="report-topic-heading">
-                        <h3 class="t-op">Name</h3>
-                        <h3 class="t-op">Gender</h3>
-                        <h3 class="t-op">Date</h3>
-                        <h3 class="t-op">Disease</h3>
-                        <h3 class="t-op">Status</h3>
+                <!-- appointment request start here -->
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">Appointment Request</h1>
+                        <button class="view">View All</button>
                     </div>
 
-                    <div class="items">
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Jhon</h3>
-                            <h3 class="t-op-nextlvl">Male</h3>
-                            <h3 class="t-op-nextlvl">21 march 2024</h3>
-                            <h3 class="t-op-nextlvl">cancer</h3>
-                            <h3 class="t-op-nextlvl label-tag">Recover</h3>
+                    <div class="report-body">
+                        <div class="report-topic-heading">
+                            <h3 class="t-op">Name</h3>
+                            <h3 class="t-op">Number</h3>
+                            <h3 class="t-op">Date</h3>
+                            <h3 class="t-op">Test</h3>
+                            <h3 class="t-op">Status</h3>
                         </div>
 
-                        <div class="item1">
-                            <h3 class="t-op-nextlvl">Smith</h3>
-                            <h3 class="t-op-nextlvl">Male</h3>
-                            <h3 class="t-op-nextlvl">4 April 2024</h3>
-                            <h3 class="t-op-nextlvl">Cold</h3>
-                            <h3 class="t-op-nextlvl label-tag">Process</h3>
+                        <div class="items">
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Jhon</h3>
+                                <h3 class="t-op-nextlvl" style="text-align: center;">458547545</h3>
+                                <h3 class="t-op-nextlvl">2 march 2024</h3>
+                                <h3 class="t-op-nextlvl">X-Ray</h3>
+                                <h3 class="t-op-nextlvl label-tag">Accepted</h3>
+                            </div>
+
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Smith</h3>
+                                <h3 class="t-op-nextlvl">65466445</h3>
+                                <h3 class="t-op-nextlvl">4 April 2024</h3>
+                                <h3 class="t-op-nextlvl">Blood-test</h3>
+                                <h3 class="t-op-nextlvl"><i class="fa-regular fa-circle-check fa-2x"
+                                        style="margin-right: 10px; color: green; cursor: pointer;"></i> <i
+                                        class="fa-regular fa-circle-xmark fa-2x"
+                                        style="color: red; cursor: pointer;"></i>
+                                </h3>
+                            </div>
+
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Joe</h3>
+                                <h3 class="t-op-nextlvl">456486445</h3>
+                                <h3 class="t-op-nextlvl">4 May 2024</h3>
+                                <h3 class="t-op-nextlvl">Sonography</h3>
+                                <h3 class="t-op-nextlvl"><i class="fa-regular fa-circle-check fa-2x"
+                                        style="margin-right: 10px; color: green; cursor: pointer;"></i> <i
+                                        class="fa-regular fa-circle-xmark fa-2x"
+                                        style="color: red; cursor: pointer;"></i>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- appointment request ends here -->
+
+                <!-- Report Section -->
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">Recent patients</h1>
+                        <button class="view">View All</button>
+                    </div>
+
+                    <div class="report-body">
+                        <div class="report-topic-heading">
+                            <h3 class="t-op">Name</h3>
+                            <h3 class="t-op">Gender</h3>
+                            <h3 class="t-op">Date</h3>
+                            <h3 class="t-op">Disease</h3>
+                            <h3 class="t-op">Status</h3>
+                        </div>
+
+                        <div class="items">
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Jhon</h3>
+                                <h3 class="t-op-nextlvl">Male</h3>
+                                <h3 class="t-op-nextlvl">21 march 2024</h3>
+                                <h3 class="t-op-nextlvl">cancer</h3>
+                                <h3 class="t-op-nextlvl label-tag">Recover</h3>
+                            </div>
+
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Smith</h3>
+                                <h3 class="t-op-nextlvl">Male</h3>
+                                <h3 class="t-op-nextlvl">4 April 2024</h3>
+                                <h3 class="t-op-nextlvl">Cold</h3>
+                                <h3 class="t-op-nextlvl label-tag">Process</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- report section end here -->
+            </section>
+
+            <section class="profile defaultNone">
+                <!-- profile card  for doctor:  -->
+                <div class="card">
+                    <div class="profile-card-body">
+                        <h4 id="basic-info-title" class="profile-card-title title">Basic Information</h4>
+                        <div class="row profileFormRow">
+                            <div class="uploadImage">
+                                <div class="form-group profile-avatar">
+                                    <div class="profile-img-container">
+                                        <img id="user-image"
+                                            src="https://static.vecteezy.com/system/resources/thumbnails/028/287/384/small_2x/a-mature-indian-male-doctor-on-a-white-background-ai-generated-photo.jpg"
+                                            alt="User Image">
+                                    </div>
+                                    <div class="upload-img">
+                                        <div class="changePhotoBtn">
+                                            <span><i class="fa fa-upload"></i> Upload Photo</span>
+                                            <input id="uploadPhoto" type="file" class="upload">
+                                        </div>
+                                        <small class="form-text textMuted">Allowed JPG, GIF or PNG. Max size of
+                                            2MB</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="username">Username <span class="text-danger">*</span></label>
+                                    <input id="username" type="text" class="form-control" readonly="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="email">Email <span class="text-danger">*</span></label>
+                                    <input id="email" type="email" class="form-control" readonly="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="first-name">First Name <span class="text-danger">*</span></label>
+                                    <input id="first-name" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="last-name">Last Name <span class="text-danger">*</span></label>
+                                    <input id="last-name" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input id="phone" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender" class="form-control select select2-hidden-accessible"
+                                        tabindex="-1" aria-hidden="true">
+                                        <option value="">Select</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group mb-0">
+                                    <label for="dob">Date of Birth</label>
+                                    <input id="dob" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group mb-0">
+                                    <label for="Specalities">Specalities</label>
+                                    <input id="Specalities" type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- profile card  for doctor ends here:  -->
+
+                <!-- contact Information -->
+                <div class="card">
+                    <div class="contact-card">
+                        <div class="contact-card-body">
+                            <h4 id="contact-details-title" class="contact-card-title title">Contact Details</h4>
+                            <div class="row contact-form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="address-line1">Address Line 1</label>
+                                        <input id="address-line1" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="address-line2">Address Line 2</label>
+                                        <input id="address-line2" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input id="city" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="state-province">State / Province</label>
+                                        <input id="state-province" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <input id="country" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="postal-code">Postal Code</label>
+                                        <input id="postal-code" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact information ends here -->
+
+                <div class="button">
+                    <button type="submit" class="btn">Save Details</button>
+                </div>
+            </section>
+
+            <section class="hospital defaultNone ">
+                <!-- clinic pics  -->
+                <div class="card">
+                    <div class="clinic-card">
+                        <div class="clinic-card-body">
+                            <h4 id="clinic-details-title" class="clinic-card-title title">Clinic Details</h4>
+                            <div class="row clinic-form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="clinicName">Clinic Name</label>
+                                        <input id="clinicName" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="clinicAddress"> Clinic Address</label>
+                                        <input id="clinicAddress" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="upload-img" style="text-align: center;
+                                    width: 100%;">
+                                        <div class="changePhotoBtn">
+                                            <span style="color: rgb(51, 50, 50);"><i class="fa fa-upload"></i> Upload
+                                                Clinic
+                                                Photo</span>
+                                            <input id="uploadPhoto" type="file" class="upload">
+                                        </div>
+                                        <small class="form-text textMuted">Allowed JPG, GIF or PNG. Max size of
+                                            2MB</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- clinic pics -->
+
+                <!-- contact Information -->
+                <div class="card">
+                    <div class="contact-card">
+                        <div class="contact-card-body">
+                            <h4 id="contact-details-title" class="contact-card-title title">Hospital Details</h4>
+                            <div class="row contact-form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="address-line1">Address Line 1</label>
+                                        <input id="address-line1" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="address-line2">Address Line 2</label>
+                                        <input id="address-line2" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input id="city" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="state-province">State / Province</label>
+                                        <input id="state-province" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <input id="country" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="postal-code">Postal Code</label>
+                                        <input id="postal-code" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact information ends here -->
+                <div class="button">
+                    <button type="submit" class="btn">Save Details</button>
+                </div>
+            </section>
+
         </div>
+
+
     </div>
 
     <script src="../doctor/doctor.js"></script>
