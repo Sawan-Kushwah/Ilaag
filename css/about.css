@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.imageContainer .imgBox {
+    background: url('https://mediplus-nextjs.vercel.app/_next/static/media/bread-bg.077ec224.jpg');
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.aboutContainer {
+    display: flex;
+    min-height: 300px;
+    max-width: 1200px;
+    margin: 70px auto 0px auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+}
+
+.aboutImage img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.about-area {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    padding: 0 20px;
+}
+
+#about-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#about-subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-list {
+    padding-left: 0;
+}
+
+.about-list li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+.about-list li i {
+    color: green;
+}
+
+
+
+
+
+
+
+
+.sub-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ourVision {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.single-vision-box {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in-out;
+    width: 26%;
+    border: 2px solid #e1e1e1;
+    border-radius: 20px;
+    min-width: 300px;
+
+}
+
+.single-vision-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.single-vision-box .icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f1f3f6;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-vision-box .icon i {
+    font-size: 72px;
+    color: #28a745;
+}
+
+.single-vision-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-vision-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.mission-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0 -15px;
+    justify-content: space-evenly;
+}
+
+.mission-list li {
+    width: 250px;
+    border: 2px solid;
+    flex: 0 0 50%;
+    max-width: 38%;
+    color: #7d7d7d;
+    font-size: 14.5px;
+    line-height: 1.7;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    margin: 10px 0px;
+    min-width: 200px;
+}
+
+.mission-list .mission-text {
+    color: black;
+}
+
+.mission-list li .icon i {
+    color: rgb(0, 191, 255);
+}
+
+
+
+@media only screen and (max-width:1076px) {
+
+    .aboutImage img,
+    .our-mission-image img {
+        width: 100%;
+    }
+
+    .aboutImage,
+    .our-mission-image {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .ourMissionContainer {
+        flex-direction: column-reverse;
+    }
+
+    .ourVision {
+        flex-wrap: wrap;
+    }
+
+    .single-vision-box {
+        margin: 25px 0px;
+    }
+
+    .mission-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:360px) {
+
+    .aboutContainer {
+        padding: 0;
+    }
+
+    .aboutImage,
+    .our-mission-image {
+        padding: 6px;
+    }
+
+    #about-subtitle {
+        font-size: 1.1rem;
+    }
+}
