@@ -273,7 +273,61 @@ header {
     border-radius: 4px;
 }
 
+.userChanges {
+    padding-left: 23px;
+}
 
+.userDetails {
+    border: none;
+    font-size: 1.1rem;
+    padding: 6px 0px 10px 10px;
+    color: black;
+    width: 100%;
+    max-width: 360px;
+}
+
+.editProfile {
+    margin-bottom: 20px;
+}
+
+
+
+.btn {
+    padding: 10px 15px;
+    background: #0aba6f;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid #62d2a2;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    color: white;
+    margin-left: 22px;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    color: #62d2a2;
+    background-color: white;
+}
+
+.defaultNone {
+    display: none;
+}
+
+.borderOfUserDetails {
+    border: 2px solid gray;
+}
+
+.active {
+    background-color: var(--Border-color);
+    color: white;
+}
+
+.reportDetails {
+    margin-bottom: 30px;
+    width: 100%;
+}
 
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
@@ -398,7 +452,29 @@ header {
         padding: 10px 10px 5px 10px;
     }
 
+    .main {
+        padding: 5px;
+    }
 
+    .report-container {
+        border-radius: 5px;
+    }
+
+    .userChanges {
+        padding: 0px !important;
+    }
+
+    .btn {
+        padding: 10px 14px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        margin-left: 0px;
+        margin-top: 19px;
+    }
+
+    .reportDetails {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -439,51 +515,4 @@ header {
         width: 70px;
     }
 
-}
-
-.userDetails {
-    border: none;
-    font-size: 1.1rem;
-    padding: 6px 0px 10px 10px;
-    color: black;
-}
-
-.editProfile {
-    margin-bottom: 20px;
-}
-
-.userChanges {
-    padding-left: 23px;
-}
-
-.btn {
-    padding: 10px 15px;
-    background: #0aba6f;
-    cursor: pointer;
-    border-radius: 15px;
-    outline: none;
-    border: 2px solid #62d2a2;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    color: white;
-    margin-left: 22px;
-    margin-top: 30px;
-}
-
-.btn:hover {
-    color: #62d2a2;
-    background-color: white;
-}
-
-.defaultNone {
-    display: none;
-}
-
-.borderOfUserDetails {
-    border: 2px solid gray;
-}
-
-.active {
-    background-color: var(--Border-color);
-    color: white;
 }

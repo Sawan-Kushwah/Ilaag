@@ -192,11 +192,7 @@
     .form-control {
         min-width: 222px;
     }
-
-    .card {
-        padding: 0;
-    }
-
+ 
     .changePhotoBtn span {
         font-size: 0.7rem;
     }
@@ -238,5 +234,10 @@
         min-height: auto;
         margin: 35px auto 0px auto;
         padding: 0px 4px 15px 5px;
+        border-radius: 10px !important;
+    }
+
+    .btn {
+        width: 75%;
     }
 }

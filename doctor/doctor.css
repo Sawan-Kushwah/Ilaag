@@ -508,6 +508,14 @@ header {
     .searchbtn img {
         height: 20px;
     }
+
+    .main {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 320px) {
