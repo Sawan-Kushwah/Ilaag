@@ -9,6 +9,9 @@
     <title>Doctor Dashboard</title>
     <link rel="stylesheet" href="../doctor/doctor.css">
     <link rel="stylesheet" href="doctorProfile.css">
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 </head>
 
 <body>
@@ -486,6 +489,29 @@
                 <div class="button">
                     <button type="submit" class="btn">Save Details</button>
                 </div>
+
+                <section class="mapSection">
+                    <div class="mapContainer doctorMap">
+                        <h1>Search your hospital here</h1>
+                        <div class="locationContainer">
+                            <div class="inputLocation">
+                                <input type="text" id="doctorSearchInput" name="city" placeholder="Your location...">
+                            </div>
+                            <span style="width: 1px;"></span>
+                            <div class="searchButton">
+                                <button id="search" onclick="searchLocation()">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                        <div id="doctorMap"></div>
+                        <form id="doctorLocationForm" action="/submit_location" method="POST">
+                            <input type="hidden" id="doctorLatitude" name="latitude">
+                            <input type="hidden" id="doctorLongitude" name="longitude">
+                            <button type="submit" class="btn locationBtn">Submit</button>
+                        </form>
+                    </div>
+                </section>
             </section>
 
         </div>
@@ -495,6 +521,8 @@
 
     <script src="../doctor/doctor.js"></script>
     <script src="../javascript/login.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="doctorMap.js"></script>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
 </body>
 
