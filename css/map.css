@@ -35,6 +35,7 @@
 .mapSection .mapContainer {
     border: 2px solid;
     width: 70%;
+    display: none;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease-in;
     height: auto;
@@ -124,9 +125,10 @@
     width: 100% !important;
     border: 2px solid gray !important;
     margin-top: 30px;
+    display: block !important;
 }
 
-.doctorMap h1{
+.doctorMap h1 {
     font-size: 2.2rem;
-  text-align: center;
+    text-align: center;
 }
