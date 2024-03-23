@@ -329,6 +329,22 @@ header {
     width: 100%;
 }
 
+.nav-option:hover {
+    border-left: 5px solid #010058af;
+    background-color: var(--Border-color);
+}
+
+.nav-upper-options a:hover {
+    color: white;
+}
+
+.nav-option:hover {
+    color: white;
+}
+.nav-upper-options a {
+    color: black;
+    text-decoration: none;
+}
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
     .nav-img {

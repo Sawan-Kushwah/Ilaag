@@ -223,9 +223,17 @@ header {
     cursor: pointer;
 }
 
-.option1:hover {
+.nav-option:hover {
     border-left: 5px solid #010058af;
     background-color: var(--Border-color);
+}
+
+.nav-upper-options a:hover {
+    color: white;
+}
+
+.nav-option:hover {
+    color: white;
 }
 
 .box {
@@ -359,7 +367,10 @@ header {
     border-radius: 4px;
 }
 
-
+.nav-upper-options a {
+    color: black;
+    text-decoration: none;
+}
 
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {

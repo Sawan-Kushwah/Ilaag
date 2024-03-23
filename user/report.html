@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
 				initial-scale=1.0">
-    <title>User Profile</title>
+    <title>User Report</title>
     <link rel="stylesheet" href="../user/user.css">
 </head>
 
@@ -33,24 +33,24 @@
 
     <div class="main-container">
 
-         <!-- navbar section  is here -->
-         <div class="navcontainer">
+        <!-- navbar section  is here -->
+        <div class="navcontainer">
             <nav class="nav">
                 <div class="nav-upper-options">
                     <a href="user.html">
-                        <div class="nav-option option1 active">
+                        <div class="nav-option option1">
                             <i class="fa-solid fa-user fa-2x"></i>
                             <h3> Profile</h3>
                         </div>
                     </a>
                     <a href="appointment.html">
-                        <div class="option2 nav-option ">
+                        <div class="option2 nav-option">
                             <i class="fa-solid fa-notes-medical fa-2x"></i>
                             <h3 onclick> Appointment</h3>
                         </div>
                     </a>
                     <a href="report.html">
-                        <div class="nav-option option3 ">
+                        <div class="nav-option option3 active">
                             <i class="fa-solid fa-newspaper fa-2x"></i>
                             <h3> Report</h3>
                         </div>
@@ -65,37 +65,52 @@
         </div>
         <!-- navbar section  is end here -->
 
-
         <main class="main">
 
 
-            <!-- Profile section is start here -->
-            <div class="report-container  profile">
+
+
+            <!-- report section start here -->
+            <div class="report-container report">
                 <div class="report-header">
-                    <h1 class="recent-Articles">Profile</h1>
-                    <p>Hello , <span id="userName">Sawan</span></p>
+                    <h1 class="recent-Articles">Report</h1>
                 </div>
 
                 <div class="report-body">
-                    <div class="editProfile">
-                        <h3 class="t-op" style="display: inline; font-size: 22px;">Edit Profile</h3>
-                        <i class="fa-solid fa-pen" style="cursor: pointer;" id="editPen"></i>
+                    <div class="t-op">Your Report</div>
+                    <div class="items reportDetails">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ipsum praesentium totam cum, optio
+                        similique. Ad dignissimos, neque aspernatur quos tempora deleniti sint ab veniam, ex ipsum
+                        voluptates nisi quasi iure earum. Dolor iste cumque aut a accusamus rem esse quis deleniti sit
+                        vitae.
                     </div>
-                    <form action="" class="userChanges" id="userEditForm">
-                        <h3 class="t-op">Full Name</h3>
-                        <input id="user_name" type="text" class="profileUserName userDetails" disabled=""
-                            value="Joe Doe">
-                        <h3 class="t-op">Phone Number</h3>
-                        <input id="user_phone_number" type="tel" class="profileUserPhone userDetails" disabled=""
-                            value="457-985674">
-                        <h3 class="t-op">Email Address</h3>
-                        <input id="user_email_address" type="email" class="profileUserEmail userDetails" disabled=""
-                            value="user@gmail.com">
-                    </form>
-                    <button class="btn defaultNone" type="submit" id="userDetailsSaveBtn">Save Changes</button>
+                    <div class="report-topic-heading">
+                        <h3 class="t-op">Name</h3>
+                        <h3 class="t-op">Number</h3>
+                        <h3 class="t-op">Date</h3>
+                        <h3 class="t-op">Test</h3>
+                        <h3 class="t-op">Print Report</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">joe</h3>
+                            <h3 class="t-op-nextlvl" style="text-align: center;">458547545</h3>
+                            <h3 class="t-op-nextlvl">2 march 2024</h3>
+                            <h3 class="t-op-nextlvl">X-Ray</h3>
+                            <h3 class="t-op-nextlvl label-tag">View</h3>
+                        </div>
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">joe</h3>
+                            <h3 class="t-op-nextlvl" style="text-align: center;">458547545</h3>
+                            <h3 class="t-op-nextlvl">12 march 2024</h3>
+                            <h3 class="t-op-nextlvl">Blood-test</h3>
+                            <h3 class="t-op-nextlvl">Soon</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Profile section is end here -->
+            <!-- report section end here -->
+
 
         </main>
 
