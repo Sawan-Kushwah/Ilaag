@@ -99,15 +99,18 @@ body {
 /* Styles for the continue button */
 .continue-button button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #52b520;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+
 }
 
 .continue-button button:hover {
-    background-color: #0056b3;
+    background-color: #399b07;
 }
 
 /* Styles for the hospital details section */
@@ -232,7 +235,7 @@ body {
 .value {
     font-size: 16px;
     font-weight: bold;
-    color: #007bff;
+    color: #52b520;
 }
 
 /* Styles for the total amount */
@@ -291,7 +294,7 @@ textarea {
     .hospital-details {
         /* min-width: 0px; */
         max-width: 0px;
-        width: 650px  !important;
+        width: 650px !important;
     }
 }
 
