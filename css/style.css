@@ -12,9 +12,7 @@ html {
 
 
 /* Styling search bar  */
-.logoShowOnResponsive {
-    display: none !important;
-}
+
 
 .heroBox img {
     width: 100%;

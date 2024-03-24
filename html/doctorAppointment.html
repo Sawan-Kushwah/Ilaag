@@ -4,49 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Form</title>
+    <title>Booking || Treat now</title>
     <link rel="stylesheet" href="../css/appointment.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
-    <section class="appointment">
-        <div class="container">
-            <h1>Book Your Appointment</h1>
-            <p style="color: #2b2b2b;
-            font-size: 0.8rem;
-            text-align: center;">We will confirm your appointment within 2 hours</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <div class="hamburger">
+        <i id="ham" class="fa-solid fa-bars fa-3x"></i>
+        <i id="cross" class="fa-solid fa-x fa-3x"></i>
+    </div>
+    <div class="logo logoShowOnResponsive">
+        <img src="img/logo.png" alt="logo">
+        <div class="webNameBar">
+            <div class="webName">Ilaag</div>
+            <div class="nearMe">
+                <button id="mapOpenButton1" class="btn">
+                    <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span> Near Me
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="flex navbar ">
+        <div class="logo  logoHideOnResponsive">
+            <img src="img/logo.png" alt="logo">
+            <div class="webNameBar">
+                <div class="webName">Ilaag</div>
+                <div class="nearMe">
+                    <button id="mapOpenButton" class="btn">
+                        <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span> Near Me
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul class="flex">
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#abou">About</a></li>
+            <li><a href="#depart">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./html/department.html">Department</a>
+                    <a href="./html/login.html">Login/signUp</a>
+                    <a href="./html/doctorAppointment.html">Get Appointment</a>
+                    <a href="./html/about.html">About Us(Admin)</a>
+                </div>
+            </div>
+            <div class="dropdown user userProfile">
+                <div class="userImage">
+                    <button class="dropbtn"><img src="/img/user.jpg" alt="" style="width: 50px; border-radius: 50%;">
+                </div>
+                </button>
+                <div class="dropdown-content" style="min-width: auto;">
+                    <a href="./html/user.html">Profile</a>
+                    <a href="./html/doctorAppointment.html">Booking</a>
+                    <!-- <button class="btn" onclick="logoutUser()">logout</button> -->
+                    <a href="" onclick="logoutUser()">Log-Out</a>
+                </div>
+            </div>
 
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
 
-                <label for="phone">Phone No:</label>
-                <input type="tel" id="phone" name="phone" required>
+            <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
 
-                <label for="department">Department:</label>
-                <select id="department" name="department" style="cursor: pointer;" required>
-                    <option value="" disabled selected>Department</option>
-                    <option value="Cardiac Clinic">Cardiac Clinic</option>
-                    <option value="Neurology"> Neurology</option>
-                    <option value="Dentistry">Dentistry</option>
-                    <option value=" Gastroenterology"> Gastroenterology</option>
-                </select>
+        </ul>
+    </nav>
 
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="3" required></textarea>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5"></textarea>
 
-                <input type="submit" value="Submit">
-            </form>
+
+
+
+    <section class="booking">
+        <div class="booking-details">
+            <div class="confirmation-message">
+                <span><span class="discount-emoji" role="img" aria-label="discount">🎉</span> <span>You just saved ₹50 on this booking!</span></span>
+            </div>
+            <div class="booking-form">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-description">Enter your details</div>
+                </div>
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" placeholder="Enter first and last name" required maxlength="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="name@abc.com" required maxlength="75">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Mobile Number</label>
+                        <input id="phone" type="tel" placeholder="e.g. 1234567890" required minlength="8" maxlength="12"
+                            pattern="[0-9]*">
+                    </div>
+                    <div class="input-group">
+                        <label for="date">Date</label>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="input-group note-area">
+                        <label for="date">Note</label>
+                        <textarea name="Note" id="Note" cols="30" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button type="button">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hospital-details">
+            <div class="hospital-info">
+                <div class="hospital-name">A4+ Hospital</div>
+                <div class="hospital-rating">
+                    <div class="rating">4.0 ★</div>
+                    <div class="rating-count">(630 Ratings)</div>
+                    <div class="rating-description">Very Good</div>
+                </div>
+            </div>
+            <div class="hospital-image">
+                <img src="https://advinhealthcare.com/wp-content/uploads/2022/12/Types-of-Hospitals-2.jpg" alt="">
+            </div>
+            <div class="booking-options">
+                <div class="booking-dates">
+                    <div class="date-range">Sun, 24 Mar – Mon, 25 Mar</div>
+                </div>
+                <div class="pricing-details">
+                    <div class="price-details">
+                        <div class="detail">Test</div>
+                        <div class="value">Blood test with Hemoglobin</div>
+                    </div>
+                    <div class="price-details">
+                        <div class="detail">Address</div>
+                        <div class="value">Sagore kuti, Pithampur</div>
+                    </div>
+                    <div class="price-details">
+                        <div class="detail">Test Price</div>
+                        <div class="value">₹150.00</div>
+                    </div>
+                    <div class="price-details">
+                        <div class="detail">Instant discount</div>
+                        <div class="value">-₹50.00</div>
+                    </div>
+                    <div class="total-amount price-details">
+                        <div class="detail">Payable Amount</div>
+                        <div class="value">₹100</div>
+                    </div>
+                </div>
+                <div class="booking-action">
+                    <div class="booking-count">15 people booked this hospital today</div>
+                </div>
+            </div>
         </div>
     </section>
+    <script src="../javascript/responsive.js"></script>
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>

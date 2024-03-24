@@ -7,6 +7,10 @@
 }
 
 /* Navbar designing  */
+.logoShowOnResponsive {
+    display: none !important ;
+}
+
 .hamburger {
     cursor: pointer;
     position: absolute;
@@ -237,4 +241,8 @@ ul li a {
 
 .userProfile {
     display: none;
+}
+
+.flex {
+    display: flex;
 }
