@@ -18,74 +18,74 @@
 
 <body onload="myfunction()">
     <div id="loading"></div>
-    <div class="heroSection">
-        <div class="heroBox">
-            <img src="img/hero-bg.png" alt="hero-bg">
+    <div class="hamburger">
+        <i id="ham" class="fa-solid fa-bars fa-3x"></i>
+        <i id="cross" class="fa-solid fa-x fa-3x"></i>
+    </div>
+    <div class="logo logoShowOnResponsive">
+        <img src="img/logo.png" alt="logo">
+        <div class="webNameBar">
+            <div class="webName">Ilaag</div>
+            <div class="nearMe">
+                <button id="mapOpenButton1" class="btn">
+                    <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span> Near Me
+                </button>
+            </div>
         </div>
-        <div class="hamburger">
-            <i id="ham" class="fa-solid fa-bars fa-3x"></i>
-            <i id="cross" class="fa-solid fa-x fa-3x"></i>
-        </div>
-        <div class="logo logoShowOnResponsive">
+    </div>
+    <nav class="flex navbar ">
+        <div class="logo  logoHideOnResponsive">
             <img src="img/logo.png" alt="logo">
             <div class="webNameBar">
                 <div class="webName">Ilaag</div>
                 <div class="nearMe">
-                    <button id="mapOpenButton1" class="btn">
+                    <button id="mapOpenButton" class="btn">
                         <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         </span> Near Me
                     </button>
                 </div>
             </div>
         </div>
-        <nav class="flex navbar ">
-            <div class="logo  logoHideOnResponsive">
-                <img src="img/logo.png" alt="logo">
-                <div class="webNameBar">
-                    <div class="webName">Ilaag</div>
-                    <div class="nearMe">
-                        <button id="mapOpenButton" class="btn">
-                            <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                            </span> Near Me
-                        </button>
-                    </div>
+        <ul class="flex">
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#abou">About</a></li>
+            <li><a href="#depart">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./html/department.html">Department</a>
+                    <a href="./html/login.html">Login/signUp</a>
+                    <a href="./html/department.html">Get Appointment</a>
+                    <a href="./html/about.html">About Us(Admin)</a>
                 </div>
             </div>
-            <ul class="flex">
-                <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#abou">About</a></li>
-                <li><a href="#depart">Departments</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <div class="dropdown">
-                    <button class="dropbtn">Pages
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="./html/department.html">Department</a>
-                        <a href="./html/login.html">Login/signUp</a>
-                        <a href="./html/department.html">Get Appointment</a>
-                        <a href="./html/about.html">About Us(Admin)</a>
-                    </div>
+            <div class="dropdown user userProfile">
+                <div class="userImage">
+                    <button class="dropbtn"><img src="/img/user.jpg" alt=""
+                            style="width: 50px; border-radius: 50%;">
                 </div>
-                <div class="dropdown user userProfile">
-                    <div class="userImage">
-                        <button class="dropbtn"><img src="/img/user.jpg" alt=""
-                                style="width: 50px; border-radius: 50%;">
-                    </div>
-                    </button>
-                    <div class="dropdown-content" style="min-width: auto;">
-                        <a href="./html/user.html">Profile</a>
-                        <a href="./html/doctorAppointment.html">Booking</a>
-                        <!-- <button class="btn" onclick="logoutUser()">logout</button> -->
-                        <a href="" onclick="logoutUser()">Log-Out</a>
-                    </div>
+                </button>
+                <div class="dropdown-content" style="min-width: auto;">
+                    <a href="./html/user.html">Profile</a>
+                    <a href="./html/doctorAppointment.html">Booking</a>
+                    <!-- <button class="btn" onclick="logoutUser()">logout</button> -->
+                    <a href="" onclick="logoutUser()">Log-Out</a>
                 </div>
+            </div>
 
 
-                <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
+            <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
 
-            </ul>
-        </nav>
+        </ul>
+    </nav>
+    <div class="heroSection">
+        <div class="heroBox">
+            <img src="img/hero-bg.png" alt="hero-bg">
+        </div>
         <section class="mapSection">
             <div class="mapContainer">
                 <i id="mapClose" class="fa-solid fa-x fa-3x"></i>

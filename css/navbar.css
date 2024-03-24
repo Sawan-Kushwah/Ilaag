@@ -8,7 +8,7 @@
 
 /* Navbar designing  */
 .logoShowOnResponsive {
-    display: none !important ;
+    display: none !important;
 }
 
 .hamburger {
@@ -30,12 +30,16 @@
 }
 
 .navbar {
+    transition: all 0.3s ease;
     justify-content: space-around;
+    align-items: center;
     position: sticky;
     top: 0;
     left: 0;
-    font-family: Open Sans;
-    transition: all 0.3s ease;
+    box-shadow: 0 5px 19px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background: #48b19d;
+    backdrop-filter: blur(10px);
 }
 
 .navbar * {

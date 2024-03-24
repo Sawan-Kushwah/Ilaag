@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details || TreatNow</title>
+    <link rel="stylesheet" href="../css/hospitalDetails.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <div class="hamburger">
+        <i id="ham" class="fa-solid fa-bars fa-3x"></i>
+        <i id="cross" class="fa-solid fa-x fa-3x"></i>
+    </div>
+    <div class="logo logoShowOnResponsive">
+        <img src="../img/logo.png" alt="logo">
+        <div class="webNameBar">
+            <div class="webName">Ilaag</div>
+            <div class="nearMe">
+                <button id="mapOpenButton1" class="btn">
+                    <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span> Near Me
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="flex navbar ">
+        <div class="logo  logoHideOnResponsive">
+            <img src="../img/logo.png" alt="logo">
+            <div class="webNameBar">
+                <div class="webName">Ilaag</div>
+                <div class="nearMe">
+                    <button id="mapOpenButton" class="btn">
+                        <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span> Near Me
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul class="flex">
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/department.html">Departments</a></li>
+            <li><a href="../index.html">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/department.html">Department</a>
+                    <a href="../html/login.html">Login/signUp</a>
+                    <a href="../html/doctorAppointment.html">Get Appointment</a>
+                    <a href="../html/about.html">About Us(Admin)</a>
+                </div>
+            </div>
+
+
+        </ul>
+    </nav>
+
+
+
+    <section>
+        <div class="carousel">
+            <ul class="slides">
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide-image">
+                        <img
+                            src="https://advinhealthcare.com/wp-content/uploads/2022/12/Types-of-Hospitals-2.jpg">
+                    </div>
+                    <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                            <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide-image">
+                        <img src="https://puntacana-bavaro.com/wp-content/uploads/2018/03/IMG_ITB.jpg">
+                    </div>
+                    <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                            <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide-image">
+                        <img
+                            src="https://www.alanya1.com/images/posts/690x450/1kapakhastane.webp">
+                    </div>
+                    <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                            <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-1" class="next-slide">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+                <div class="carousel-dots">
+                    <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="hospitalDetails">
+        <div class="hospital-main-details">
+            <div class="hospital-main-name" itemprop="name">A4+ Hospital</div>
+            <div class="hospital-main-address">
+                <span itemprop="streetAddress">Sagore kuti, Pithampur</span>
+                <meta itemprop="@id" content="">
+                <meta itemprop="addressCountry" content="India">
+                <meta itemprop="addressLocality" content="Indore">
+            </div>
+            <div class="hospital-contact margin-top-bottom">
+                <div class="heading">Contact Information</div>
+                <div class="hospital-contact-details">
+                    <div class="contact-details">
+                        <div class="detail">Address : </div>
+                        <div class="value">Sagore kuti, Pithampur</div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="detail">Phone : </div>
+                        <div class="value">+123 456 789</div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="detail">Email : </div>
+                        <div class="value">info@hospital.com</div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="detail">Fax : </div>
+                        <div class="value">+123 456 789</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hospital-specialities margin-top-bottom">
+                <div class="heading">Hospital Specialities</div>
+                <div class="speciality-list">
+                    <div>Cardiology</div>
+                    <div>Neurology</div>
+                    <div>Orthopedics</div>
+                    <div>Oncology</div>
+                    <div>Pediatrics</div>
+                </div>
+            </div>
+            <div class="hospital-services margin-top-bottom">
+                <div class="heading">Hospital Services</div>
+                <div class="services-list">
+                    <div>Emergency Care</div>
+                    <div>Surgery</div>
+                    <div>Maternity Care</div>
+                    <div>Diagnostic Imaging</div>
+                    <div>Physical Therapy</div>
+                </div>
+            </div>
+            <div class="visiting-hours-info margin-top-bottom">
+               <div class="heading">Visiting hours</div>
+                <p>Our visiting hours are as follows:</p>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>10:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>11:00 AM - 6:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="testimonials margin-top-bottom">
+                <div class="heading">Testimonials / Reviews</div>
+                <div class="testimonial  margin-top-bottom">
+                    <p>"I had a wonderful experience at XYZ Hospital. The staff was caring and attentive, and the doctors were highly knowledgeable. I would highly recommend this hospital to anyone in need of medical care."</p>
+                    <p class="author">- John Doe</p>
+                </div>
+                <div class="testimonial margin-top-bottom">
+                    <p>"The level of care I received at XYZ Hospital exceeded my expectations. From the moment I walked in, I felt welcomed and supported. I'm grateful for the expertise of the medical team and the compassionate approach to patient care."</p>
+                    <p class="author">- Jane Smith</p>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+            
+        </div>
+
+        <div class="hospital-details">
+            <div class="hospital-info">
+                <div class="hospital-name">A4+ Hospital</div>
+                <div class="hospital-rating">
+                    <div class="rating">4.0 ★</div>
+                    <div class="rating-count">(630 Ratings)</div>
+                    <div class="rating-description">Very Good</div>
+                </div>
+            </div>
+            <div class="hospital-image">
+                <img src="https://advinhealthcare.com/wp-content/uploads/2022/12/Types-of-Hospitals-2.jpg" alt="">
+            </div>
+            <div class="booking-options">
+                <div class="booking-dates">
+                    <div class="date-range">Sun, 24 Mar – Mon, 25 Mar</div>
+                </div>
+                <div class="pricing-details">
+                    <div class="price-details">
+                        <div class="detail">Test</div>
+                        <div class="value">Blood test with Hemoglobin</div>
+                    </div>
+                    <div class="price-details">
+                        <div class="detail">Address</div>
+                        <div class="value">Sagore kuti, Pithampur</div>
+                    </div>
+                    <div class="price-details">
+                        <div class="detail">Test Price</div>
+                        <div class="value">₹150.00</div>
+                    </div>
+                    <div class="price-details">
+                        <div class="detail">Instant discount</div>
+                        <div class="value">-₹50.00</div>
+                    </div>
+                    <div class="total-amount price-details">
+                        <div class="detail">Payable Amount</div>
+                        <div class="value">₹100</div>
+                    </div>
+                </div>
+                <div class="booking-action">
+                    <div class="booking-count">15 people booked this hospital today</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/responsive.js"></script>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
