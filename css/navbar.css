@@ -38,8 +38,9 @@
     left: 0;
     box-shadow: 0 5px 19px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    background: #48b19d;
+    background: #02663b;
     backdrop-filter: blur(10px);
+    color: white;
 }
 
 .navbar * {
@@ -88,10 +89,10 @@ ul li {
 
 ul li a {
     padding: .5em .8em;
-    color: rgba(0, 0, 0, 0.88);
     position: relative;
     text-decoration: none;
     font-size: 22px;
+    color: white;
 }
 
 .navbar a::before,
@@ -165,10 +166,10 @@ ul li a {
     font-size: 22px;
     border: none;
     outline: none;
-    color: black;
+    color: white;
     background-color: inherit;
     margin: 0;
-    padding: .5em .8em;
+    padding: .3em .8em;
     cursor: pointer;
     font-family: Open Sans;
 
@@ -208,7 +209,7 @@ ul li a {
     border: none;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    color: black;
+    color: white;
     padding: 0;
 }
 
