@@ -394,6 +394,15 @@
         width: 97% !important;
     }
 
+    .logo {
+        padding: 3px 7px;
+    }
+
+    .logo .webName {
+        margin: 0px 5px;
+        font-size: 1.6rem;
+    }
+
 }
 
 @media only screen and (max-height: 460px) {

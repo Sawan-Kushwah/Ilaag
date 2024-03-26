@@ -148,7 +148,7 @@
      }
 
      .blog-slider {
-         min-height: 500px;
+         min-height: 600px;
          height: auto;
          margin: 180px auto;
      }
@@ -184,7 +184,10 @@
      }
 
      .blog-slider__button {
-         width: 65%;
+         width: 90%;
+     }
+     #depart{
+        padding: 0px !important;
      }
  }
 
