@@ -14,11 +14,11 @@
     --background-color2: #ffffff;
     --background-color3: #ededed;
     --background-color4: #cad7fda4;
-    --primary-color: #007643;
+    --primary-color: #063d42;
     --secondary-color: #012314;
-    --Border-color: #00361f;
-    --one-use-color: #00361f;
-    --two-use-color: #02663b;
+    --Border-color: #062426 ;
+    --one-use-color: #062327;
+    --two-use-color: #063d42;
 }
 
 body {
@@ -43,7 +43,7 @@ header {
 .logo {
     font-size: 27px;
     font-weight: 600;
-    color: rgb(47, 141, 70);
+    color: #063d42;
 }
 
 .icn {
@@ -311,7 +311,7 @@ header {
 .recent-Articles {
     font-size: 30px;
     font-weight: 600;
-    color: #00361f;
+    color: #062426 ;
 }
 
 .view {

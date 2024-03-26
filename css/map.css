@@ -30,6 +30,7 @@
     display: block !important;
     margin: 5px 15px !important;
     cursor: pointer;
+    color: white;
 }
 
 .mapSection .mapContainer {

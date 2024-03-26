@@ -27,7 +27,7 @@ body {
     margin-bottom: 20px;
     width: 648px;
     border-radius: 4px;
-    margin-right: 24px;
+    margin-left: 24px;
 
 }
 
@@ -125,10 +125,6 @@ body {
     box-shadow: 0 2px 26px 0 rgba(125, 125, 125, 0.1);
     padding: 24px;
     box-sizing: border-box;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 24px;
-    z-index: -9;
 }
 
 /* Styles for the hospital name */
@@ -288,7 +284,8 @@ textarea {
 
 @media only screen and (max-width : 1012px) {
     .booking-details {
-        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 15px;
     }
 
     .hospital-details {
@@ -296,6 +293,7 @@ textarea {
         max-width: 0px;
         min-width: 100% !important;
     }
+
     .hospital-image img {
         height: 340px;
         /* max-width: 0px; */
@@ -307,13 +305,13 @@ textarea {
 }
 
 @media only screen and (max-width : 600px) {
-    .note-area textarea{
+    .note-area textarea {
         max-width: 100% !important;
     }
 }
+
 @media only screen and (max-width : 360px) {
     .booking-details {
-        margin-right: 0px;
         padding: 10px;
     }
 
@@ -325,6 +323,7 @@ textarea {
         min-width: 0px;
         width: 100%;
     }
+
     .hospital-image img {
         height: 250px;
     }

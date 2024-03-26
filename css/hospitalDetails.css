@@ -153,10 +153,6 @@ input:checked+.slide-container .nav label {
     box-shadow: 0 2px 26px 0 rgba(125, 125, 125, 0.1);
     padding: 24px;
     box-sizing: border-box;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 24px;
-    z-index: -9;
 }
 
 /* Styles for the hospital name */
@@ -307,7 +303,7 @@ input:checked+.slide-container .nav label {
 /* .hospital-main-details page styling goes here */
 .hospital-main-details {
     width: 60%;
-    margin-right: 32px;
+    margin-left: 32px;
     max-width: 720px;
 }
 
@@ -409,7 +405,8 @@ input:checked+.slide-container .nav label {
     }
 
     .hospital-main-details {
-        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 15px;
     }
 
     .hospital-image img {
@@ -444,7 +441,7 @@ input:checked+.slide-container .nav label {
     .testimonial {
         width: 100%;
     }
-    
+
 }
 
 @media only screen and (max-width : 360px) {

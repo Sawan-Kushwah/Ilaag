@@ -66,13 +66,10 @@ html {
     padding: 12px 0;
     width: 100%;
     cursor: pointer;
-}
-
-.searchButton button {
-    cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    border: 1px solid #e0e0e0;
 }
 
 .searchButton button:after {
@@ -173,7 +170,7 @@ html {
     cursor: pointer;
     border-radius: 8px;
     outline: none;
-    border: 2px solid #073036;
+    border: 2px solid #e0e0e0;
     font-size: 1rem;
     transition: all 0.3s ease;
     color: white;
