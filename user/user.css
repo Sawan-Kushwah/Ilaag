@@ -16,7 +16,7 @@
     --background-color4: #cad7fda4;
     --primary-color: #007643;
     --secondary-color: #012314;
-    --Border-color: #00361f;
+    --Border-color: #062327;
     --one-use-color: #00361f;
     --two-use-color: #02663b;
 }
@@ -43,7 +43,7 @@ header {
 .logo {
     font-size: 27px;
     font-weight: 600;
-    color: rgb(47, 141, 70);
+    color: #062327;
 }
 
 .icn {
@@ -217,7 +217,7 @@ header {
 .recent-Articles {
     font-size: 30px;
     font-weight: 600;
-    color: #00361f;
+    color: #062327;
 }
 
 .view {
@@ -341,10 +341,12 @@ header {
 .nav-option:hover {
     color: white;
 }
+
 .nav-upper-options a {
     color: black;
     text-decoration: none;
 }
+
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
     .nav-img {

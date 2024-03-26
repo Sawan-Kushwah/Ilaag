@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #009579;
+    background-color: #052124 !important;
 }
 
 .container {
@@ -68,7 +68,7 @@ body {
 
 .form a {
     font-size: 16px;
-    color: #009579;
+    color: #073c42;
     text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .form input.button {
     color: #fff;
-    background: #009579;
+    background: #073c42;
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1px;
@@ -88,7 +88,7 @@ body {
 }
 
 .form input.button:hover {
-    background: #006653;
+    background: #052124;
 }
 
 .signup {
@@ -97,7 +97,7 @@ body {
 }
 
 .signup label {
-    color: #009579;
+    color: #073c42;
     cursor: pointer;
 }
 

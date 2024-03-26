@@ -9,6 +9,8 @@
 /* Navbar designing  */
 .logoShowOnResponsive {
     display: none !important;
+    background: #052124 !important;
+    color: white;
 }
 
 .hamburger {
@@ -21,9 +23,6 @@
     transition: all 0.3s ease;
 }
 
-.heroSection {
-    height: 100vh;
-}
 
 .flex i {
     margin: 0px 6px;
@@ -36,9 +35,9 @@
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 0 5px 19px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 19px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    background: #02663b;
+    background: #062327 !important;
     backdrop-filter: blur(10px);
     color: white;
 }
@@ -57,7 +56,7 @@
     display: flex;
     align-items: center;
     position: sticky;
-    margin: 0px 40px;
+    padding: 3px 40px;
     transition: all 0.3s ease;
 }
 
@@ -109,8 +108,8 @@ ul li a {
     content: '';
     right: 0;
     top: 0;
-    border-top: 3px solid #3E8914;
-    border-right: 3px solid #2E640F;
+    border-top: 3px solid #043d44;
+    border-right: 3px solid #028fa2;
     transform: translate(-100%, 50%);
 }
 
@@ -118,8 +117,8 @@ ul li a {
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 3px solid #2E640F;
-    border-left: 3px solid #3E8914;
+    border-bottom: 3px solid #028fa2;
+    border-left: 3px solid #043d44;
     transform: translate(100%, -50%)
 }
 
@@ -130,7 +129,7 @@ ul li a {
 }
 
 .navbar a:hover {
-    color: #07f853;
+    color: #03bed7;
 }
 
 
@@ -153,9 +152,7 @@ ul li a {
     transition: all 0.3s ease;
 }
 
-.searchButton {
-    width: 12%;
-}
+
 
 .dropdown {
     float: left;
@@ -224,8 +221,8 @@ ul li a {
     border: none;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    color: black;
     padding: 0;
+    color: white;
 }
 
 #mapOpenButton1:hover {

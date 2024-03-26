@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareConnect</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Treat Now</title>
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/contact.css">
     <!-- <link rel="stylesheet" href="css/login.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -25,7 +25,7 @@
     <div class="logo logoShowOnResponsive">
         <img src="img/logo.png" alt="logo">
         <div class="webNameBar">
-            <div class="webName">Ilaag</div>
+            <div class="webName">Treat Now</div>
             <div class="nearMe">
                 <button id="mapOpenButton1" class="btn">
                     <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -38,7 +38,7 @@
         <div class="logo  logoHideOnResponsive">
             <img src="img/logo.png" alt="logo">
             <div class="webNameBar">
-                <div class="webName">Ilaag</div>
+                <div class="webName">Treat Now</div>
                 <div class="nearMe">
                     <button id="mapOpenButton" class="btn">
                         <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -65,8 +65,7 @@
             </div>
             <div class="dropdown user userProfile">
                 <div class="userImage">
-                    <button class="dropbtn"><img src="/img/user.jpg" alt=""
-                            style="width: 50px; border-radius: 50%;">
+                    <button class="dropbtn"><img src="/img/user.jpg" alt="" style="width: 50px; border-radius: 50%;">
                 </div>
                 </button>
                 <div class="dropdown-content" style="min-width: auto;">
@@ -83,9 +82,6 @@
         </ul>
     </nav>
     <div class="heroSection">
-        <div class="heroBox">
-            <img src="img/hero-bg.png" alt="hero-bg">
-        </div>
         <section class="mapSection">
             <div class="mapContainer">
                 <i id="mapClose" class="fa-solid fa-x fa-3x"></i>
@@ -184,99 +180,96 @@
     <!-- Departments section end here -->
 
     <hr>
-    <section class="bgForAboutContact">
 
-        <!-- About us section start here -->
-        <section class="aboutUs" id="abou">
-            <h2>ABOUT US</h2>
-            <div class="aboutUsRow">
-                <div class="leftBox">
-                    <div class="img">
-                        <img src="./img/doctor.jpg" alt="Doctor">
-                    </div>
+    <!-- About us section start here -->
+    <section class="aboutUs" id="abou">
+        <h2>ABOUT US</h2>
+        <div class="aboutUsRow">
+            <div class="leftBox">
+                <div class="img">
+                    <img src="./img/doctor.jpg" alt="Doctor">
                 </div>
-                <div class="rightBox">
-                    <p>we're proud to introduce our platform as a pioneering solution in healthcare accessibility.
-                        Committed
-                        to simplifying the patient journey, we leverage cutting-edge technology and strategic
-                        partnerships
-                        to redefine the way individuals access medical care. Our mission is to empower users with
-                        convenient
-                        tools for booking appointments, connecting with trusted healthcare providers, and promoting
-                        proactive wellness management. With a focus on user-centric design and a dedication to
-                        excellence,
-                        we aim to revolutionize healthcare access and elevate the standard of patient experience.</p>
-                    <div class="aboutBtn">
-                        <a href="./html/about.html">
+            </div>
+            <div class="rightBox">
+                <p>we're proud to introduce our platform as a pioneering solution in healthcare accessibility.
+                    Committed
+                    to simplifying the patient journey, we leverage cutting-edge technology and strategic
+                    partnerships
+                    to redefine the way individuals access medical care. Our mission is to empower users with
+                    convenient
+                    tools for booking appointments, connecting with trusted healthcare providers, and promoting
+                    proactive wellness management. With a focus on user-centric design and a dedication to
+                    excellence,
+                    we aim to revolutionize healthcare access and elevate the standard of patient experience.</p>
+                <div class="aboutBtn">
+                    <a href="./html/about.html">
                         <button class="btn">
-                                Read More
-                            </button>
-                        </a>
-                    </div>
+                            Read More
+                        </button>
+                    </a>
                 </div>
             </div>
-        </section>
-        <!-- About us section end here -->
-
-        <hr>
-
-        <!-- contact form section -->
-        <section id="contact">
-            <h1 class="section-header">Contact Us</h1>
-            <div class="contact-wrapper">
-                <!-- Left contact page -->
-                <form id="contact-form" class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" id="phone" placeholder="PHONE NO." name="phone" value=""
-                            required>
-                    </div>
-                    <textarea class="form-control" rows="8" placeholder="MESSAGE" name="message" required></textarea>
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">SEND</button>
-                </form>
-                <!-- Right contact page -->
-                <div class="direct-contact-container">
-                    <ul class="contact-list">
-                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a
-                                        href="Indore , India" title="Find me">Indore/India</a></span></i></li>
-
-                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                        href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i>
-                        </li>
-
-                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                        href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-                    </ul>
-                    <hr>
-                    <ul class="social-media-list">
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-                </div>
-            </div>
-        </section>
-        <!-- contact form section ends here-->
-
+        </div>
     </section>
+    <!-- About us section end here -->
+
+    <hr>
+
+    <!-- contact form section -->
+    <section id="contact">
+        <h1 class="section-header">Contact Us</h1>
+        <div class="contact-wrapper">
+            <!-- Left contact page -->
+            <form id="contact-form" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                        required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" id="phone" placeholder="PHONE NO." name="phone" value=""
+                        required>
+                </div>
+                <textarea class="form-control" rows="8" placeholder="MESSAGE" name="message" required></textarea>
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">SEND</button>
+            </form>
+            <!-- Right contact page -->
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a
+                                    href="Indore , India" title="Find me">Indore/India</a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i>
+                    </li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                    href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                </ul>
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+            </div>
+        </div>
+    </section>
+    <!-- contact form section ends here-->
+
 
     <!-- foorter section start here -->
     <footer class="footer">

@@ -4,11 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>About Page || Treat Now</title>
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
+    <div class="hamburger">
+        <i id="ham" class="fa-solid fa-bars fa-3x"></i>
+        <i id="cross" class="fa-solid fa-x fa-3x"></i>
+    </div>
+    <div class="logo logoShowOnResponsive">
+        <img src="img/logo.png" alt="logo">
+        <div class="webNameBar">
+            <div class="webName">Treat Now</div>
+            <div class="nearMe">
+                <button id="mapOpenButton1" class="btn">
+                    <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span> Near Me
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="flex navbar ">
+        <div class="logo  logoHideOnResponsive">
+            <img src="../img/logo.png" alt="logo">
+            <div class="webNameBar">
+                <div class="webName">Treat Now</div>
+                <div class="nearMe">
+                    <button id="mapOpenButton" class="btn">
+                        <span style="margin: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span> Near Me
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul class="flex">
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/department.html">Departments</a></li>
+            <li><a href="../index.html">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/department.html">Department</a>
+                    <a href="../html/login.html">Login/signUp</a>
+                    <a href="../html/department.html">Get Appointment</a>
+                    <a href="../html/about.html">About Us(Admin)</a>
+                </div>
+            </div>
+            <div class="dropdown user userProfile">
+                <div class="userImage">
+                    <button class="dropbtn"><img src="../img/user.jpg" alt="" style="width: 50px; border-radius: 50%;">
+                </div>
+                </button>
+                <div class="dropdown-content" style="min-width: auto;">
+                    <a href="./html/user.html">Profile</a>
+                    <a href="./html/doctorAppointment.html">Booking</a>
+                    <!-- <button class="btn" onclick="logoutUser()">logout</button> -->
+                    <a href="" onclick="logoutUser()">Log-Out</a>
+                </div>
+            </div>
+
+
+            <!-- <li><a href="./html/login.html">LogIn/signUp</a></li> -->
+
+        </ul>
+    </nav> 
     <header>
         <div class="imageContainer">
             <div class="imgBox">TRUST & CARE</div>
@@ -109,7 +174,7 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/44b443cf5b.js" crossorigin="anonymous"></script>
-
+<script src="../javascript/responsive.js"></script>
 
 </body>
 
