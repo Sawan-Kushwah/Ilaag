@@ -98,12 +98,8 @@
         color: white
     }
 
-    .heroBox img {
-        height: 64%;
-    }
-
     .heroSection {
-        height: 65vh !important;
+        height: 70vh !important;
     }
 
     .locationBtn {
@@ -174,9 +170,10 @@
         flex-direction: column;
     }
 
-    .heroBox img {
-        width: 100%;
+    .mainBox {
+        padding: 96px 30px 155px 30px;
     }
+
 }
 
 @media only screen and (max-width: 570px) {
@@ -274,8 +271,8 @@
     }
 
     .heroText {
-        font-size: 1.2rem !important;
-        line-height: 2.4rem !important;
+        font-size: 1.1rem !important;
+        line-height: 2rem !important;
     }
 
     .contact-text a {
@@ -284,10 +281,6 @@
 
     .box {
         width: 90%;
-    }
-
-    .heroBox img {
-        height: 38%;
     }
 
     .section-header {
@@ -299,7 +292,7 @@
     }
 
     .heroSection {
-        height: 40vh !important;
+        height: 45vh !important;
     }
 
     .department {
